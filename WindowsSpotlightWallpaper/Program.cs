@@ -5,6 +5,14 @@ using System.Security.Principal;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
 
+[assembly: AssemblyCompany("Takeshi Katano")]
+[assembly: AssemblyCopyright("Copyright (C) 2017 Takeshi Katano. All rights reserved.")]
+[assembly: AssemblyDescription("Utility tool for setting the desktop background image using the Windows Spotlight image.")]
+[assembly: AssemblyTitle("Utility tool for setting the desktop background image using the Windows Spotlight image.")]
+[assembly: AssemblyProduct("WindowsSpotlightWallpaper")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyInformationalVersion("1.1.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
 namespace WindowsSpotlightWallpaper
 {
     class Program
