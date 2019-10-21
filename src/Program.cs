@@ -21,7 +21,10 @@ namespace BgImgUsingWinSpotlight
         static void Main()
         {
             var imageFilePath = GetWindowsSpotlightImageFilePath();
-            NativeHelper.ChangeDesktopBackgroundImage(imageFilePath);
+            if (imageFilePath != null)
+            {
+                NativeHelper.ChangeDesktopBackgroundImage(imageFilePath);
+            }
         }
 
         private static string GetWindowsSpotlightImageFilePath()
@@ -38,13 +41,20 @@ namespace BgImgUsingWinSpotlight
 
             using var regSubKey = regKey.OpenSubKey(parentSubKeyPath);
             var subKeyNames = new List<string>(regSubKey.GetSubKeyNames());
-            subKeyNames.Sort();
 
+            if (subKeyNames.Count == 0)
+            {
+                return null;
+            }
+
+            subKeyNames.Sort();
             return parentSubKeyPath + @"\" + subKeyNames[subKeyNames.Count - 1];
         }
 
         private static string GetLandscapeImageFilePath(RegistryKey regKey, string subKeyPath)
         {
+            if (string.IsNullOrWhiteSpace(subKeyPath)) return null;
+
             using var regSubKey = regKey.OpenSubKey(subKeyPath);
             var imageFilePath = (string)regSubKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
             if (string.IsNullOrWhiteSpace(imageFilePath))
