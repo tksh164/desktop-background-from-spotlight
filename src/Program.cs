@@ -20,6 +20,8 @@ namespace BgImgUsingWinSpotlight
         [STAThread]
         static void Main()
         {
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(ExceptionTrapper.UnhandledExceptionTrapper);
+
             var imageFilePath = GetWindowsSpotlightImageFilePath();
             if (imageFilePath != null)
             {
@@ -47,6 +49,7 @@ namespace BgImgUsingWinSpotlight
 
                 if (subKeyNames.Count == 0)
                 {
+                    Log.WriteLog(string.Format("Couldn't find the latest image subkey under \"HKEY_LOCAL_MACHINE\\{0}\".", parentSubKeyPath));
                     return null;
                 }
 
@@ -64,7 +67,7 @@ namespace BgImgUsingWinSpotlight
                 var imageFilePath = (string)regSubKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
                 if (string.IsNullOrWhiteSpace(imageFilePath))
                 {
-                    throw new InvalidOperationException(string.Format("Cannot get the image file path from the landscapeImage value under \"{0}\".", subKeyPath));
+                    Log.WriteLog(string.Format("Couldn't get the image file path from the landscapeImage value under \"HKEY_LOCAL_MACHINE\\{0}\".", subKeyPath));
                 }
                 return imageFilePath;
             }
