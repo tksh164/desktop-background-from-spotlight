@@ -29,9 +29,11 @@ namespace BgImgUsingWinSpotlight
 
         private static string GetWindowsSpotlightImageFilePath()
         {
-            using var regKeyLocalMachine = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64);
-            var latestImageSubKeyPath = GetLatestImageSubKeyPath(regKeyLocalMachine);
-            return GetLandscapeImageFilePath(regKeyLocalMachine, latestImageSubKeyPath);
+            using (var regKeyLocalMachine = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
+            {
+                var latestImageSubKeyPath = GetLatestImageSubKeyPath(regKeyLocalMachine);
+                return GetLandscapeImageFilePath(regKeyLocalMachine, latestImageSubKeyPath);
+            }
         }
 
         private static string GetLatestImageSubKeyPath(RegistryKey regKey)
@@ -39,29 +41,33 @@ namespace BgImgUsingWinSpotlight
             var userSid = WindowsIdentity.GetCurrent().User.Value;
             var parentSubKeyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Creative\" + userSid;
 
-            using var regSubKey = regKey.OpenSubKey(parentSubKeyPath);
-            var subKeyNames = new List<string>(regSubKey.GetSubKeyNames());
-
-            if (subKeyNames.Count == 0)
+            using (var regSubKey = regKey.OpenSubKey(parentSubKeyPath))
             {
-                return null;
-            }
+                var subKeyNames = new List<string>(regSubKey.GetSubKeyNames());
 
-            subKeyNames.Sort();
-            return parentSubKeyPath + @"\" + subKeyNames[subKeyNames.Count - 1];
+                if (subKeyNames.Count == 0)
+                {
+                    return null;
+                }
+
+                subKeyNames.Sort();
+                return parentSubKeyPath + @"\" + subKeyNames[subKeyNames.Count - 1];
+            }
         }
 
         private static string GetLandscapeImageFilePath(RegistryKey regKey, string subKeyPath)
         {
             if (string.IsNullOrWhiteSpace(subKeyPath)) return null;
 
-            using var regSubKey = regKey.OpenSubKey(subKeyPath);
-            var imageFilePath = (string)regSubKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
-            if (string.IsNullOrWhiteSpace(imageFilePath))
+            using (var regSubKey = regKey.OpenSubKey(subKeyPath))
             {
-                throw new InvalidOperationException(string.Format("Cannot get the image file path from the landscapeImage value under \"{0}\".", subKeyPath));
+                var imageFilePath = (string)regSubKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
+                if (string.IsNullOrWhiteSpace(imageFilePath))
+                {
+                    throw new InvalidOperationException(string.Format("Cannot get the image file path from the landscapeImage value under \"{0}\".", subKeyPath));
+                }
+                return imageFilePath;
             }
-            return imageFilePath;
         }
 
         internal class NativeHelper
