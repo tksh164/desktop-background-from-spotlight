@@ -20,18 +20,18 @@ namespace BgImgUsingWinSpotlight
         [STAThread]
         static void Main()
         {
-            var imageFilePath = GetWindowsSpotlightLandscapeImageFilePath();
+            var imageFilePath = GetWindowsSpotlightImageFilePath();
             NativeHelper.ChangeDesktopBackgroundImage(imageFilePath);
         }
 
-        private static string GetWindowsSpotlightLandscapeImageFilePath()
+        private static string GetWindowsSpotlightImageFilePath()
         {
             string imageFilePath;
 
             using (var regKeyLocalMachine = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
             {
-                var latestImageSubKeyName = GetLatestImageSubKeyName(regKeyLocalMachine);
-                using (var regKey = regKeyLocalMachine.OpenSubKey(latestImageSubKeyName))
+                var latestImageSubKeyPath = GetLatestImageSubKeyPath(regKeyLocalMachine);
+                using (var regKey = regKeyLocalMachine.OpenSubKey(latestImageSubKeyPath))
                 {
                     imageFilePath = (string)regKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
                 }
@@ -45,17 +45,17 @@ namespace BgImgUsingWinSpotlight
             return imageFilePath;
         }
 
-        private static string GetLatestImageSubKeyName(RegistryKey regKeyLocalMachine)
+        private static string GetLatestImageSubKeyPath(RegistryKey regKeyLocalMachine)
         {
             var userSid = WindowsIdentity.GetCurrent().User.Value;
-            var subKeyName = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Creative\" + userSid;
+            var parentSubKeyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Creative\" + userSid;
 
-            using (var regKey = regKeyLocalMachine.OpenSubKey(subKeyName))
+            using (var regKey = regKeyLocalMachine.OpenSubKey(parentSubKeyPath))
             {
                 var subKeyNames = new List<string>(regKey.GetSubKeyNames());
                 subKeyNames.Sort();
 
-                return subKeyName + @"\" + subKeyNames[subKeyNames.Count - 1];
+                return parentSubKeyPath + @"\" + subKeyNames[subKeyNames.Count - 1];
             }
         }
 
