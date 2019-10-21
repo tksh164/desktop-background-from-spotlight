@@ -33,25 +33,25 @@ namespace BgImgUsingWinSpotlight
             }
         }
 
-        private static string GetLatestImageSubKeyPath(RegistryKey regKeyLocalMachine)
+        private static string GetLatestImageSubKeyPath(RegistryKey regKey)
         {
             var userSid = WindowsIdentity.GetCurrent().User.Value;
             var parentSubKeyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Creative\" + userSid;
 
-            using (var regKey = regKeyLocalMachine.OpenSubKey(parentSubKeyPath))
+            using (var regSubKey = regKey.OpenSubKey(parentSubKeyPath))
             {
-                var subKeyNames = new List<string>(regKey.GetSubKeyNames());
+                var subKeyNames = new List<string>(regSubKey.GetSubKeyNames());
                 subKeyNames.Sort();
 
                 return parentSubKeyPath + @"\" + subKeyNames[subKeyNames.Count - 1];
             }
         }
 
-        private static string GetLandscapeImageFilePath(RegistryKey regKeyLocalMachine, string subKeyPath)
+        private static string GetLandscapeImageFilePath(RegistryKey regKey, string subKeyPath)
         {
-            using (var regKey = regKeyLocalMachine.OpenSubKey(subKeyPath))
+            using (var regSubKey = regKey.OpenSubKey(subKeyPath))
             {
-                var imageFilePath = (string)regKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
+                var imageFilePath = (string)regSubKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
                 if (string.IsNullOrWhiteSpace(imageFilePath))
                 {
                     throw new InvalidOperationException(string.Format("Cannot get the image file path from the landscapeImage value under \"{0}\".", subKeyPath));
