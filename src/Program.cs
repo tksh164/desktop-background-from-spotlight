@@ -54,7 +54,7 @@ namespace BgImgUsingWinSpotlight
                 var imageFilePath = (string)regKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
                 if (string.IsNullOrWhiteSpace(imageFilePath))
                 {
-                    throw new InvalidOperationException("Cannot get landscapeImage value.");
+                    throw new InvalidOperationException(string.Format("Cannot get the image file path from the landscapeImage value under \"{0}\".", subKeyPath));
                 }
                 return imageFilePath;
             }
