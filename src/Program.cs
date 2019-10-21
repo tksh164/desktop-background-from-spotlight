@@ -26,23 +26,11 @@ namespace BgImgUsingWinSpotlight
 
         private static string GetWindowsSpotlightImageFilePath()
         {
-            string imageFilePath;
-
             using (var regKeyLocalMachine = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64))
             {
                 var latestImageSubKeyPath = GetLatestImageSubKeyPath(regKeyLocalMachine);
-                using (var regKey = regKeyLocalMachine.OpenSubKey(latestImageSubKeyPath))
-                {
-                    imageFilePath = (string)regKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
-                }
+                return GetLandscapeImageFilePath(regKeyLocalMachine, latestImageSubKeyPath);
             }
-
-            if (string.IsNullOrWhiteSpace(imageFilePath))
-            {
-                throw new InvalidOperationException("Cannot get landscapeImage value.");
-            }
-
-            return imageFilePath;
         }
 
         private static string GetLatestImageSubKeyPath(RegistryKey regKeyLocalMachine)
@@ -56,6 +44,19 @@ namespace BgImgUsingWinSpotlight
                 subKeyNames.Sort();
 
                 return parentSubKeyPath + @"\" + subKeyNames[subKeyNames.Count - 1];
+            }
+        }
+
+        private static string GetLandscapeImageFilePath(RegistryKey regKeyLocalMachine, string subKeyPath)
+        {
+            using (var regKey = regKeyLocalMachine.OpenSubKey(subKeyPath))
+            {
+                var imageFilePath = (string)regKey.GetValue("landscapeImage", null, RegistryValueOptions.DoNotExpandEnvironmentNames);
+                if (string.IsNullOrWhiteSpace(imageFilePath))
+                {
+                    throw new InvalidOperationException("Cannot get landscapeImage value.");
+                }
+                return imageFilePath;
             }
         }
 
