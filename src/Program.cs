@@ -20,11 +20,11 @@ namespace BgImgUsingWinSpotlight
         [STAThread]
         static void Main()
         {
-            var imageFilePath = GetWindowsSpotlightLandscapeImageFilePath();
+            var imageFilePath = GetWindowsSpotlightImageFilePath();
             NativeHelper.ChangeDesktopBackgroundImage(imageFilePath);
         }
 
-        private static string GetWindowsSpotlightLandscapeImageFilePath()
+        private static string GetWindowsSpotlightImageFilePath()
         {
             string imageFilePath;
 
