@@ -20,7 +20,7 @@ namespace BgImgUsingWinSpotlight
         private static string GetLogFilePath()
         {
             var location = Assembly.GetEntryAssembly().Location;
-            return Path.Combine(Path.GetDirectoryName(location), Path.GetFileNameWithoutExtension(location) + ".log");
+            return Path.Combine(Directory.GetCurrentDirectory(), Path.GetFileNameWithoutExtension(location) + ".log");
         }
 
         private static string BuildLogMessage(string message)
