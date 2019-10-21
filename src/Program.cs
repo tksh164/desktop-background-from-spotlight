@@ -20,6 +20,8 @@ namespace BgImgUsingWinSpotlight
         [STAThread]
         static void Main()
         {
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(ExceptionTrapper.UnhandledExceptionTrapper);
+
             var imageFilePath = GetWindowsSpotlightImageFilePath();
             if (imageFilePath != null)
             {
