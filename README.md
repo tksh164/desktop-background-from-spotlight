@@ -1,1 +1,1 @@
-# WindowsSpotlightImageToDesktopBackground
+# BackgroundFromSpotlight
