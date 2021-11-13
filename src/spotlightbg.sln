@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "spotlightbg", "spotlightbg\spotlightbg.csproj", "{38D5F630-2F5F-4060-99BB-9900C5CD1453}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportScripts", "SupportScripts", "{C66AEF4C-6A54-429F-9E38-ACD4334CE11D}"
+	ProjectSection(SolutionItems) = preProject
+		SupportScripts\RegisterScheduledTask.ps1 = SupportScripts\RegisterScheduledTask.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
