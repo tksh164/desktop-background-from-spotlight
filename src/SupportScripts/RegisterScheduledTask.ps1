@@ -3,11 +3,13 @@ param (
     [string] $ExecuteFilePath
 )
 
-$currentUserId = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+Import-Module -Name 'ScheduledTasks' -Force
 
 #
 # Principal
 #
+
+$currentUserId = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 
 $params = @{
     UserId    = $currentUserId
@@ -86,7 +88,7 @@ $settings = New-ScheduledTaskSettingsSet @params
 #
 
 $params = @{
-    Description = 'Setting the desktop background image using the Windows Spotlight image.'
+    Description = 'Setting the desktop background image from Windows spotlight image.'
     Principal   = $principal
     Trigger     = $logonTrigger,$lockTrigger,$unlockTrigger
     Action      = $action
@@ -101,7 +103,7 @@ $task.Author = $currentUserId
 #
 
 $params = @{
-    TaskName = 'WindowsSpotlightWallpaper'
+    TaskName = 'Desktop Background Image from Windows spotlight'
     TaskPath = '\'
     User     = $currentUserId
     Force    = $true
