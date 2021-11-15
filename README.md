@@ -6,6 +6,11 @@
 
 Setting the desktop background image from Windows spotlight image.
 
+## Prerequisites
+
+- Desktop background setting: `Picture`
+- Lock screen: `Windows spotlight`
+
 ## ⚖ License
 
 Copyright (c) 2017-present Takeshi Katano. All rights reserved. This software is released under the [MIT License](https://github.com/tksh164/desktop-background-from-spotlight/blob/master/LICENSE).
