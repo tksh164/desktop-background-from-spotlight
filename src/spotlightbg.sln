@@ -10,16 +10,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SupportScripts", "SupportSc
 		SupportScripts\RegisterScheduledTask.ps1 = SupportScripts\RegisterScheduledTask.ps1
 	EndProjectSection
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "Installer\Installer.wixproj", "{BD6971A6-040F-4816-A6DE-83D96084E30B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Debug|x86.Build.0 = Debug|Any CPU
 		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Release|x86.ActiveCfg = Release|Any CPU
+		{38D5F630-2F5F-4060-99BB-9900C5CD1453}.Release|x86.Build.0 = Release|Any CPU
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Debug|Any CPU.Build.0 = Debug|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Debug|x86.ActiveCfg = Debug|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Debug|x86.Build.0 = Debug|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Release|Any CPU.ActiveCfg = Release|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Release|Any CPU.Build.0 = Release|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Release|x86.ActiveCfg = Release|x86
+		{BD6971A6-040F-4816-A6DE-83D96084E30B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

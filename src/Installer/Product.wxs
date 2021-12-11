@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*"
+			 Name="!(wix.AppName) v$(var.ProductVersion)"
+			 Language="1033"
+			 Version="$(var.ProductVersion)"
+			 Manufacturer="Takeshi Katano"
+			 UpgradeCode="71a37384-3de1-482c-a72b-ed138d7903c9">
+
+		<Package InstallerVersion="500"
+				 Compressed="yes"
+				 Comments="!(loc.AddRemoveAppComments)"
+				 Description="!(wix.AppName) v$(var.ProductVersion) Installer"
+				 Keywords="Installer;Windows spotlight;background image;wallpaper;desktop"/>
+
+		<!-- Windows 10 or above is required -->
+		<Condition Message="!(loc.OSRequirementMessage)"><![CDATA[Installed OR VersionNT >= 1000]]></Condition>
+
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)"/>
+		<MediaTemplate CompressionLevel="high" EmbedCab="yes"/>
+
+		<!-- Default install context is per-user -->
+		<Property Id="ALLUSERS" Value="2" Secure="yes"/>
+		<Property Id="MSIINSTALLPERUSER" Value="1" Secure="yes"/>
+
+		<WixVariable Id="AppName" Value="Desktop Background Image from Windows Spotlight"/>
+		<WixVariable Id="AppNameWithoutWhitespace" Value="SpotlightBG"/>
+
+		<!-- Related to Add/Remove Programs -->
+		<!--<Icon Id="rdclauncher.ico" SourceFile="$(var.msrdcui.ProjectDir)\Resources\msrdcui0.ico"/>-->
+		<Property Id="ARPNOMODIFY" Value="1"/>
+		<!--<Property Id="ARPPRODUCTICON" Value="rdclauncher.ico"/>-->
+		<Property Id="ARPHELPLINK" Value="https://github.com/tksh164/desktop-background-from-spotlight"/>
+		<Property Id="ARPCOMMENTS" Value="!(loc.AddRemoveAppComments)"/>
+		<Property Id="ARPREADME" Value="https://github.com/tksh164/desktop-background-from-spotlight/blob/master/README.md"/>
+		<Property Id="ARPURLUPDATEINFO" Value="https://github.com/tksh164/desktop-background-from-spotlight/releases/latest"/>
+		<Property Id="ARPURLINFOABOUT" Value="https://github.com/tksh164/desktop-background-from-spotlight"/>
+
+		<Feature Id="ProductFeature">
+			<ComponentGroupRef Id="ProductComponents"/>
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="!(wix.AppNameWithoutWhitespace)"/>
+			</Directory>
+			<Directory Id="ProgramMenuFolder"/>
+		</Directory>
+	</Fragment>
+</Wix>
