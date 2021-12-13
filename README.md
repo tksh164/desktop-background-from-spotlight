@@ -4,7 +4,7 @@
 
 ## 🗨 About
 
-Setting the desktop background image from Windows spotlight image.
+Setting the desktop background image from Windows spotlight lock screen image.
 
 ## Prerequisites
 
