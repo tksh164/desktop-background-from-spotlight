@@ -46,7 +46,6 @@
 			<Directory Id="ProgramFilesFolder">
 				<Directory Id="INSTALLFOLDER" Name="!(wix.AppNameWithoutWhitespace)"/>
 			</Directory>
-			<Directory Id="ProgramMenuFolder"/>
 		</Directory>
 	</Fragment>
 </Wix>
