@@ -27,9 +27,9 @@
 		<WixVariable Id="AppNameWithoutWhitespace" Value="SpotlightBG"/>
 
 		<!-- Related to Add/Remove Programs -->
-		<!--<Icon Id="rdclauncher.ico" SourceFile="$(var.msrdcui.ProjectDir)\Resources\msrdcui0.ico"/>-->
+		<!--<Icon Id="spotlightbg.ico" SourceFile="$(var.spotlightbg.ProjectDir)\Resources\spotlightbg.ico"/>-->
 		<Property Id="ARPNOMODIFY" Value="1"/>
-		<!--<Property Id="ARPPRODUCTICON" Value="rdclauncher.ico"/>-->
+		<!--<Property Id="ARPPRODUCTICON" Value="spotlightbg.ico"/>-->
 		<Property Id="ARPHELPLINK" Value="https://github.com/tksh164/desktop-background-from-spotlight"/>
 		<Property Id="ARPCOMMENTS" Value="!(loc.AddRemoveAppComments)"/>
 		<Property Id="ARPREADME" Value="https://github.com/tksh164/desktop-background-from-spotlight/blob/master/README.md"/>
