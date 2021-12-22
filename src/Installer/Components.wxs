@@ -1,11 +1,2049 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-			<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
+		<DirectoryRef Id="INSTALLFOLDER">
+			<Component Id="comp_218e99fda1da4b248bfd0326d2388db7">
+				<File Id="file_e9ff817410464a8d9f9c802f78f0dddd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Accessibility.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_5a1b27ca45ad4c529e451532515d7425">
+				<File Id="file_2429ed02f4cf4ca1b3e0f6f1f3bf1870" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-console-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b78a14c495054270b38e123ab16e184a">
+				<File Id="file_9ac4ee2434534f03a2fcaa42f1c8a33c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-console-l1-2-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3b9d546d45e1420583110709b672694c">
+				<File Id="file_c6e2fe2a46694e6eab734a9efccc6538" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-datetime-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6828c2af30c740f6ac82338bcfce9d8a">
+				<File Id="file_175c3ecb15fc47919c8846e49bdd9008" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-debug-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_656c676d05f846f2a076671264a4a77e">
+				<File Id="file_c4c1f1ce8569451e8cf658d39a4fc97c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-errorhandling-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1093c50269a5445182dc6d97df571587">
+				<File Id="file_22d6b5d26fc842bcb1eae70d147165bc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-file-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7897f92af81a42419147238574063645">
+				<File Id="file_9181441b60f74215bb92d0dbe95d7335" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-file-l1-2-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8f492f1e928a49819c5880a00c1dbcda">
+				<File Id="file_b0c5329d92df4085bb85cfcfadf4d8ac" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-file-l2-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9b27a36b585b477e88b4ea5b3074557f">
+				<File Id="file_9572ef77df144bbeb16e86e1408bbf01" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-handle-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d494e327325144e38e7e60a5f5e092fb">
+				<File Id="file_b8d4090ce58248d0a3d0f66a2384cb24" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-heap-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c1e49769132647d2a988b3c0bdf64b54">
+				<File Id="file_b4a28a8b4eff48969e193a1481f4116b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-interlocked-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c6ebcf648e3c4acebbb0210979a8d95a">
+				<File Id="file_971418d722094d37911daba1d8dfc9cd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-libraryloader-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_5540b3767d77458cad6c2a69cc8b68d9">
+				<File Id="file_9acb7759702441e28832fdd7031bff38" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-localization-l1-2-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e355a5234a0d4b32bd122f621ec23dc6">
+				<File Id="file_45610119b31f414f87408f5163e8eb2c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-memory-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_71b6154af61f4744aeb2e281b723a5e5">
+				<File Id="file_c54a659e35f04a8ebedde8196b623258" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-namedpipe-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_10f0f8b6c72a429fb42c62e90ffd4728">
+				<File Id="file_52dc8ee0a80743529f2d41d334c8b0a7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-processenvironment-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_fb1633f62c644021b9e5a04dfae96fb5">
+				<File Id="file_42eb7bdaea144fbf95d2af38d5fd948a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-processthreads-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_afa3faed12c54565ab5114e233d62c93">
+				<File Id="file_323dcd85843f49f29254f666a178e17e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-processthreads-l1-1-1.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c360ffd7707840c197512215ca2cea8e">
+				<File Id="file_39f3e11422154533b0f911a34b6b76a9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-profile-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_554a372a49f54df08dd84f93b9ef1c09">
+				<File Id="file_2f88c925c91d48bd91094ded30aac4bd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-rtlsupport-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_351b8ed6ba88433fbd97d62c73412ec6">
+				<File Id="file_9026e991cfc64b579ec3f284c7e5e0d1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-string-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e3b2c36043f14e0fa1b375604fbc601e">
+				<File Id="file_f1c625241f0f443686752f9519365556" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-synch-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_add1558937d64bd2a326b0ef23b465ee">
+				<File Id="file_5d2c353b9887413c9bfe1131eb79223c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-synch-l1-2-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_99ac3a0c925e4fd0bf5bc953572ddf61">
+				<File Id="file_9076fdd993424e8f9a196628584b4577" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-sysinfo-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0b41bc75250e4b71a77210c7521a1938">
+				<File Id="file_d716fc8c0774444191e508f2f960175d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-timezone-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6476d89d0c7143438ee853238659af15">
+				<File Id="file_3367a27884dc47068f126c5696452dfc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-core-util-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c6fcff0a38b74e80a2b63a583bdcda7f">
+				<File Id="file_8f4eefb3dffc40a39eed9917e31c0150" Source="$(var.spotlightbg.TargetDir)publish\win-x86\API-MS-Win-core-xstate-l2-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_4295a1aea08b4b6bb39acd09c23dbc23">
+				<File Id="file_b44e0f3d817c4aa986e75e5ba8095332" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-conio-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8fcb730cbf0a443cb5c4359761acaded">
+				<File Id="file_ecc24b4eb95f43f48e68adbfca19abe2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-convert-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_50ded7ce92714b5385990a7802849018">
+				<File Id="file_9bf088d369f1400ba4381bbfd23cde8e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-environment-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_248f89da4065486e8d4e1c8654e853d6">
+				<File Id="file_229dec38091d4d1e98a39051de022bd9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-filesystem-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_29b2fb5bb7fb4430983cb866af24eda0">
+				<File Id="file_14fff5c151f6478883bb646dda589eff" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-heap-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9c6b7083ccd34c30bdf0a3080169c272">
+				<File Id="file_dcc76a28fbe2407b989b94c47e74fae9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-locale-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_58921c30942a4f54b65741d5eb58327d">
+				<File Id="file_eadc07f73e07439c996c8e835fe6366b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-math-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f1edb3d16f6f4ed9bd7c6763e5d0ca7a">
+				<File Id="file_561b9f97b8ee4d3b82aa60b04e887af6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-multibyte-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b876452398f94bba80274c7c774f595a">
+				<File Id="file_b2daa6319de548deb8e4174ad0126401" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-private-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_75f39b932fbd4420922a3cd7925bc57a">
+				<File Id="file_beaa677e4d0d4d28b74cafa3b0b572b0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-process-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_dace932544ec44f2be984a3efce61949">
+				<File Id="file_1b0996a9b6a444aca546d474102d9cbf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-runtime-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_4f5dc8f75f244d44a54948787e50cca6">
+				<File Id="file_7f711aa18e684776a33b072c8f00deaa" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-stdio-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cfdf8b44d08c462f8da455928fd2df42">
+				<File Id="file_6c303bac62aa4ad29ca3fcec8db441bf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-string-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_4efd2843c4574dfdb2bb83880c17ca3c">
+				<File Id="file_fca43029ef7645d58dd032bb2e320580" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-time-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a95873c1cf9e43048947e916861565bc">
+				<File Id="file_2e057accd3b841b6b5890f9aa61229e4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\api-ms-win-crt-utility-l1-1-0.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d82b9b2778d14dd78441a1f60ea30dd7">
+				<File Id="file_b0e93dae892544c9847fe71e77769916" Source="$(var.spotlightbg.TargetDir)publish\win-x86\clretwrc.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a22f7eddb9744458a03daf50f3794c4a">
+				<File Id="file_8b8e0d028f2d49c0957db1055f4c24bf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\clrjit.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0d5877d077a14c02ac8296b63cdf6caf">
+				<File Id="file_da83931a2b8d45e49d0f020ece6b26a2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\coreclr.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_73bfc08695694dc6a45315e88181fc8d">
+				<File Id="file_5ff72a28307d41e5af276ff85b659f31" Source="$(var.spotlightbg.TargetDir)publish\win-x86\createdump.exe" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e0bb08b1863f4a2d86a05498e9cb1225">
+				<File Id="file_b900db14db004af683238d9fd5d390c0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\D3DCompiler_47_cor3.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c8efd3c117f74f96852d6016434fbb96">
+				<File Id="file_7563c1cf2fb24a1a89169abc1e2ea3e0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\dbgshim.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f950a45fb0d54210bc1a112487c8e6d4">
+				<File Id="file_59a7ebc570e84861ab9662c93f31e150" Source="$(var.spotlightbg.TargetDir)publish\win-x86\DirectWriteForwarder.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8cf7b26154a34907b956fe54d12bf75c">
+				<File Id="file_64434aa856364bd58954caa17ef3c411" Source="$(var.spotlightbg.TargetDir)publish\win-x86\hostfxr.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_89e52f53afab4cdaa51a68c5e15aaf3b">
+				<File Id="file_e22670fe62054729b14fd09cad811874" Source="$(var.spotlightbg.TargetDir)publish\win-x86\hostpolicy.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ca4629364a3f4d6fbf5713d124fc86ba">
+				<File Id="file_e043b9155e6f42e8baa3dbec2e9fc0af" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.CSharp.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f736f5365b6a406d925aad6e4d5e2ca8">
+				<File Id="file_e17e1fcbaab8478597fda2c13c2222ef" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.DiaSymReader.Native.x86.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_36b203d929344ca48ed85f502974c8d0">
+				<File Id="file_387a20a3544e4968a2304ff5cc6d93ef" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.VisualBasic.Core.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_355fdd6dbc1a48edb91d7a5edf373dc1">
+				<File Id="file_de231f0f5fa34f39bab91612666ee487" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.VisualBasic.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7c17c8ade86e4e5695d902348d96cd9d">
+				<File Id="file_d2aa257084a745ae990ece9bb365c9ce" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.VisualBasic.Forms.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ca722c69616c4bcc88e21d68f0ad6962">
+				<File Id="file_8a2f00d8b05f41a0a340ce60c3f0b3a9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.Win32.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_36a318127b02489da954113f6ed0302f">
+				<File Id="file_3a7062a31c7a44c5958301486c2211b7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.Win32.Registry.AccessControl.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_63345fc03111481c964328a1e058ea47">
+				<File Id="file_e02fbd7f0d12469e911b675da4e30fed" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.Win32.Registry.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_dd8c1c40ddb4410b92c3d9f3bddb795c">
+				<File Id="file_a5a555817a0f4ab7b32cb483304ac5fc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\Microsoft.Win32.SystemEvents.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6c3afaa5eb9a4f6091f141cd617913ea">
+				<File Id="file_a87267627d7e46a1b052d10ffcbac5e4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\mscordaccore_x86_x86_6.0.121.56705.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_377dc9ee3fda4c758598e66161d3a238">
+				<File Id="file_899f5853e33f4005930d81ab4a6d3e1a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\mscordaccore.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_20b12c887b184ea0a530e92a136bfa19">
+				<File Id="file_ac5e8a6798b0471fa22c977664fb3bdc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\mscordbi.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c672b49e9849445e8528639d7fa7135f">
+				<File Id="file_70c7b9bf7c514ecd9e4f320debbb2ed0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\mscorlib.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d7ade14d17134704968960f33de4b585">
+				<File Id="file_ccb05b3275c24085b8be50f7cd7afb1f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\mscorrc.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_fe7734a07c754b55801314b3e7835a26">
+				<File Id="file_aa92050ae6cb45aea936cd740f633b42" Source="$(var.spotlightbg.TargetDir)publish\win-x86\msquic.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_26af68cf88854d42b3ce07cdfd224d88">
+				<File Id="file_3eaf6edc27ec4360924d4ac6469e381a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\netstandard.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_428277cb346f443f9f9587b49167c56b">
+				<File Id="file_2e63b1a741514233a50a9b583ee0b439" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PenImc_cor3.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8f0a832609dd4d21adb6da396b3d7dde">
+				<File Id="file_6e0227314443474a9cc536b3a3c53cf0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationCore.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_31e3eea4689640d2b079712f16f8848c">
+				<File Id="file_797dd601e81a435dbcaa77c4bd796956" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework-SystemCore.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0cb1f2e76a4b432cb23cbce8593cc4eb">
+				<File Id="file_febc90799e4e4e7086b390bdf5240927" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework-SystemData.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_94c4467fa70d47aa94e6fdf9eefdd3af">
+				<File Id="file_224ce0d3b100480d8be65d93345f0e15" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework-SystemDrawing.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0c51c2cfb7ff4e2aa8922da36c0847a6">
+				<File Id="file_f9497d1413314650abd054399c487549" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework-SystemXml.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c2120ef378964c2b8f44ba11269c4f6c">
+				<File Id="file_eb5be9c512404eb0b2b80a44d098ae70" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework-SystemXmlLinq.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3ac1b0a2b37543d58c07c924db3bc914">
+				<File Id="file_550d571da2c649c0bb1bde59870518ef" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.Aero.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_eee6af6a3c6147df9d448f48d751f56c">
+				<File Id="file_ad60a8c571f04a1294cffcc32c41d883" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.Aero2.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6524e3bb2aef4a15b29b6c91166aed4b">
+				<File Id="file_f8600b76a67e4dc9828add814db87018" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.AeroLite.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ec67c46d0eaf4c8283d2a74f51dda0e3">
+				<File Id="file_ffc660beb70440c881ef1d811442f4e3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.Classic.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0c9ba0b6f36a477e97d3dd725c56d31b">
+				<File Id="file_6a5957192d8b422cb71bac1491511873" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8cc0ab60e04a485d800aefd38ac02d92">
+				<File Id="file_4638490c6660410fac1c297bbb22a988" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.Luna.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_51b6792829e74d1e90537eb9cb0adbe4">
+				<File Id="file_5ac763e82f924d1cbdfc5959f9bb2809" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationFramework.Royale.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a2849997c54a4951ae070c6cb5bea2c4">
+				<File Id="file_cf8be09387fb4f5985228074383d5625" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationNative_cor3.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_77af6c87a3984de2bc7160bcc821ab15">
+				<File Id="file_3f861f1e146f4634a597b11ff6500bcf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\PresentationUI.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_137ac3a56f8545e586326d2912fb72a7">
+				<File Id="file_0037ed5979204214a958779f9b93c8d1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ReachFramework.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b727d106f54f4f98b69ddf7e9938ffe1">
+				<File Id="file_7827520ef5fe4ef986b1a32f7150b1d7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\spotlightbg.deps.json" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d482a3712331450584304f4102c67b61">
+				<File Id="file_1727c4f527094716995789faf18eb965" Source="$(var.spotlightbg.TargetDir)publish\win-x86\spotlightbg.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_82d31e17a25e4e0dbd28b810660b595a">
+				<File Id="file_613aa4d6a41c412b99b063bd8830df5a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\spotlightbg.exe" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a339174da38747e099b731ca2206883a">
+				<File Id="file_7059077076ed4e7bbabc55228c04c096" Source="$(var.spotlightbg.TargetDir)publish\win-x86\spotlightbg.pdb" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_20a2ca059f72498190a7f276bf2888c7">
+				<File Id="file_91dde94e9d1f495899dc91aa0cb5642c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\spotlightbg.runtimeconfig.json" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2f6105cd7e604e509fcd752389ba9a19">
+				<File Id="file_0c5bef30e9f7465eaa1deb56a034557f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.AppContext.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d8a23cd5173d4132853b9363ed6b13ea">
+				<File Id="file_addcbec8679e4f2eb4c5141dce6423dd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Buffers.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cc89a611473e49d884f8b183122926df">
+				<File Id="file_1f07a2c0c63341e9b27c3ea019ce04fd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.CodeDom.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_fe699aaddd734131b5c5cd2097aebf7b">
+				<File Id="file_9f6b9442ab9247b8bfc22e8c84fae287" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Collections.Concurrent.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_943177f050f14700b697f2adcc4c1c34">
+				<File Id="file_f480f34d7a314b95bf2844c5c9088292" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Collections.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e95eaaeddc794f4ab66ca75c39416ee3">
+				<File Id="file_e121a75dac94463ea52154518bedf7ee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Collections.Immutable.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_fcf211eacd9a4bc2958be787a049d30a">
+				<File Id="file_6ad08703deee4b34bbd37b318f022792" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Collections.NonGeneric.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e0c01409b3574dfaae2e8e7ff63659eb">
+				<File Id="file_382dcb31625c4a4488c8ca9a22e2bf70" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Collections.Specialized.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_59a4ee41d7e349e2b55799d83d591e37">
+				<File Id="file_59d9989e5af4454b8b969c5fbad1b9d6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ComponentModel.Annotations.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c4b494352a7147f597df151a322be39a">
+				<File Id="file_7e56e093d47e4fcc8f2fdae290d77b2e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ComponentModel.DataAnnotations.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d083f399b84d4e0f852afbb042ac6efc">
+				<File Id="file_296390f1a66846f79d6435b62c49f259" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ComponentModel.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3bbe2ca7004644418688fc9e7f7275f6">
+				<File Id="file_13442391f5fc4470bd3d6e31ead93428" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ComponentModel.EventBasedAsync.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_5c3547c0984044a49d3b0bac683ce0bf">
+				<File Id="file_fe3994719ac14d88a3ffb2ce5ce2dc39" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ComponentModel.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1f5a1682bde14f9a9e05db0e90eaf064">
+				<File Id="file_a55c1b7c48634023903306fa2167a239" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ComponentModel.TypeConverter.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2194570953e844a2b28bc3a112312675">
+				<File Id="file_f9f50145df454a73b0e6989304a1daff" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Configuration.ConfigurationManager.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2241000ced1d43e88044349783c9269d">
+				<File Id="file_367ebfcd2afb4b8ebdcc95ba750e363d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Configuration.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_311fd0f4e22a4996af0d13ecd0396fdc">
+				<File Id="file_42ef407d7cc745ef86b17414a653f342" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Console.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d159fb3e7eda438ea9fb531fb9997153">
+				<File Id="file_6340dd4e41c544a88157f08b60a7b628" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Core.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7625720c11a344bca9e861f674dfd855">
+				<File Id="file_95236f55592240149ebe7502a5cf1b21" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Data.Common.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7de1e194640c42719d1e1ef693dc1d20">
+				<File Id="file_d8c41add310948c98cbe01607cd99d82" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Data.DataSetExtensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d4009f4f8ff24093b3626a2727fbbb72">
+				<File Id="file_9c80eaa9cb7e42b4849d9c0092414b13" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Data.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b02c2369a14c452db60d41174caf1837">
+				<File Id="file_b648562d3ea14f91b633bdf7612f081e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Design.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3fdad1a8e49c49fca37fc080a2e80714">
+				<File Id="file_cf686c1df0e94fefb009bbb6a7a79665" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.Contracts.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1604518d654b4e02aff91d58834e349a">
+				<File Id="file_0edf7e0b05bc4341bda371d2adcbdb77" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.Debug.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_acaaf5a4711e4962bb7e892980e1329f">
+				<File Id="file_602398518dff4bdaa69476f025206875" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.DiagnosticSource.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_daffd5cb2a1e48dc8f61e3e7477838da">
+				<File Id="file_3b47939823494d398008bcfef6a2504e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.EventLog.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6b0c8a3a85bd4d7296c4d58cdc912693">
+				<File Id="file_a0c430160e5a4e51baf23eb0f5b67e2a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.FileVersionInfo.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a8e05283f42a4b13ae4147a5578684a6">
+				<File Id="file_7e5b7da2a7904719a191132f8e28ce1f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.PerformanceCounter.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_78fe4fae0f424cf6b9fae128be4e6697">
+				<File Id="file_99ea306436d04357b352801dc84a1677" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.Process.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_5a1f3ac91c8d4530bd0669639745f2df">
+				<File Id="file_81d4822895eb4f6f9aac12531f0d9ee6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.StackTrace.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ce4424c8de904c4da7e07b5914211c86">
+				<File Id="file_4a5c25ecf7374bd7bf1c24f301d9efee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.TextWriterTraceListener.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e95f128012814317b300b24ad3e8468f">
+				<File Id="file_7b4d7528bcd541bfb0b5fd0b4a575fd3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.Tools.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_752ef077cadd4f7199e3ea492e242a30">
+				<File Id="file_6064c592b9cb4cca8bc7e88ec6c82a31" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.TraceSource.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_5b34f2ae24784474b0ac874c10802ac5">
+				<File Id="file_72b7083e1ddf4fdfaae9ac944b484099" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Diagnostics.Tracing.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cc9a0d839be8489da43aeb753d62c463">
+				<File Id="file_a73414982fe14e399a9df3cb90def0f2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.DirectoryServices.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1ab8ab9e4a724bc48d7d813eff06e187">
+				<File Id="file_bc11c29071e54a4f9c72d5722ca3c0c6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2d60317a4b214f808308fb4225df9a65">
+				<File Id="file_655a656c7e81437987bb3c3a9799efab" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Drawing.Common.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f23088428c38413daf06aafa1f5d6e28">
+				<File Id="file_bac10025c030480f8972c49118afcc47" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Drawing.Design.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ccfb899e5e91493991d5a2f1a9b10ac1">
+				<File Id="file_eede3a641f2c48eb861a4e9643afee71" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Drawing.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3c50168b00214e499b4657bbf462ba1a">
+				<File Id="file_6f0bee83503940bfac45c702e05ab575" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Drawing.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0d79ada91bdf40f09808e16510065163">
+				<File Id="file_dcedbfe5e9de4031b8d98d30798341e5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Dynamic.Runtime.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_80beb5513c8745338dd25b9f277fc457">
+				<File Id="file_f5ccc2ed0870438fafc9864ae0235cdf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Formats.Asn1.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a4e61d74331d496cacfe35bd8bef7bcf">
+				<File Id="file_68cb6b91abb343b69536517e3cff0bb5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Globalization.Calendars.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3cde40f43d2b4aec807b3e4d84f58653">
+				<File Id="file_29cb82bdeba540faab91422eb41b9f3d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Globalization.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cb8e8618031945a5b2190e2e13c75750">
+				<File Id="file_129f7df18e3e44b0ac4ea656a30a3374" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Globalization.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_40b7aa58d6b64433afb61ca17360e6f6">
+				<File Id="file_a255bbc52a144f618634d28764a5adde" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Compression.Brotli.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_626a62523e80485aa0f31f45aca25e21">
+				<File Id="file_6a22059ea07f45dfb39ef0711612046b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Compression.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ba1f2086a6bb499b924358bed0c6f90d">
+				<File Id="file_2eb5508066f24abfb35718c99c467fc9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Compression.FileSystem.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f24a47bad042440ca7472f67a439ebd3">
+				<File Id="file_21c1d8a140db43099e3f6c686c08308d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Compression.Native.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_33d2d0becaaf4681a2fa899198e1a4ae">
+				<File Id="file_004ee7e89b2744f3865f24eec61b9c3c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Compression.ZipFile.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f7f70eb343f24f44ba6c884299f95750">
+				<File Id="file_3c1e8e3962e6461287fc0ff8719e50be" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d7613684a331496083a663c9f53ce14e">
+				<File Id="file_e71ac0b47b724da184f8202ae8c73530" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.FileSystem.AccessControl.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_77905a5e389c4c7dbd6f85089555b9d1">
+				<File Id="file_1cb48dd49b3a4059974f0d22456bbc20" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.FileSystem.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0ebab66c85cc443886a9e57282b836b6">
+				<File Id="file_104305d7b08041e9b4b0ba4a2911b0ad" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.FileSystem.DriveInfo.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b0ceb7d07c574141b8d43868095296f7">
+				<File Id="file_95deb22188734214ac109285116d2fa8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.FileSystem.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_17af1987b1514602a0e55d224f756d2c">
+				<File Id="file_aabc5ab2ddc345c28fcd2ad112637c00" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.FileSystem.Watcher.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b5058ad043eb4faa8f9117316ba1e1db">
+				<File Id="file_3ade1098fee1444593fc707d23c5d39b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.IsolatedStorage.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d22e1116e4dc42e4b287554ccf397550">
+				<File Id="file_1d86c30438e946f2b4341a738ec76bc3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.MemoryMappedFiles.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a9d3509257ac42a498aed8eaffb11f51">
+				<File Id="file_54d00537acaa45a8a688da772d102c58" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Packaging.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_034351b8f55e4c96bbce3d5aa851480d">
+				<File Id="file_92326011f9fa4efc881092d2c662289e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Pipes.AccessControl.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_077be899ad4543d190b4c6b51b15ab64">
+				<File Id="file_90d27b99550448e887c932a36c9a0d3e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.Pipes.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cbe05a05593048a39ba3c21b9c836f41">
+				<File Id="file_b3badcdd9c1d42b9a294860244e0b082" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.IO.UnmanagedMemoryStream.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cace0ec50b184ffab0ebdfdca88b00b9">
+				<File Id="file_e22e075e22394850a73e35c2a95e1c93" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Linq.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b6e5f3da70404aa5a8f6c1c245e3c6c0">
+				<File Id="file_e82b3fba82604f2f98e736f4e14fe79b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Linq.Expressions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9e41d666551e4c3b8ccfcf3fd6ce33ef">
+				<File Id="file_70761b2f5fd64257937a989ab7653ca1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Linq.Parallel.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_31c58256bbb54291b134beb46447ad29">
+				<File Id="file_b73c7c601e104af6a2f16f915959f6fc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Linq.Queryable.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_642d57cd93db43128fc132f9c3b33a1f">
+				<File Id="file_a6a868399f654be29e67ec6759f308ff" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Memory.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9f6e4e72d2cc493383b7a9c695624a6b">
+				<File Id="file_725d9f1929ce4bb9b1ca8468507c3402" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_176123eaf5514b4cb7778ad14a778397">
+				<File Id="file_b1fc0f354769462cb13334fe98dce6ba" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Http.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7c7c9cbe93f84f2da83f3f6d88c1b4da">
+				<File Id="file_117a5d9fb590469cb5c175d59d040670" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Http.Json.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cb1f31c406a2440c97b172c707c68d9b">
+				<File Id="file_8c68df093cf646f1b5f2f2c80b0dee3f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.HttpListener.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_85c01069a48b490698ef1b3d423051d6">
+				<File Id="file_d964bdf7ae594d83a694a10ef6dbfecd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Mail.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d0f1f7225c224661ad627b82b5635623">
+				<File Id="file_cb90972053c44b28a2df226358d64af0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.NameResolution.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_eedee35266c846f989ee1413077a50b0">
+				<File Id="file_bb1b256b9bc54ef38a98542e0d93af41" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.NetworkInformation.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_98d37116b8534c9b993854b70b50e487">
+				<File Id="file_99c2f24813ce4c0292e5e19cb3041358" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Ping.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_10927b8d6a6f404ba74a3d627a390a1b">
+				<File Id="file_5d6524424b394a8190c886eb5fe4ca56" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_17528e776ffc4077aa9aa5f4caec17ad">
+				<File Id="file_6d91a31af7ce4c018e1de5cae6eaa13b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Quic.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_4a2953b5e95246139645403bf99a4e45">
+				<File Id="file_f12d1f031a564f7081083d458600a668" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Requests.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6cfd93aef5ee4c3a8bb4bb3eae65ec7c">
+				<File Id="file_e32bf0c1361140d5947188ceba3525b4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Security.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_75efdbd650b748ebb67dd759a117ba32">
+				<File Id="file_c46a79e36644431b85d60059432dd396" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.ServicePoint.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ca1f19ff163340f885d78699229bc4ef">
+				<File Id="file_6115cdf36b6a4202b18afe4a0f7d8c10" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.Sockets.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_029786e439bb42f6b41a1cbf1f5662d8">
+				<File Id="file_0a6414a5c297487d923bec80b4a4304b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.WebClient.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c14b291a06564616aac6517440877880">
+				<File Id="file_f2df46ec30d048a690790ac8a8991085" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.WebHeaderCollection.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7ddc930634b74b3282bd01303838eb79">
+				<File Id="file_28dd2f2ad5834fe895d3a424e0a87c56" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.WebProxy.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d39ebc9d585f448494cf0dc7f7834a10">
+				<File Id="file_ab8d8a4fd5154cea9bfa90f87cc1768d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.WebSockets.Client.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a9f9d9ea053f46bca0fdd1ee2e1085cd">
+				<File Id="file_86529ceee1da4e829e5095a0495c8fa5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Net.WebSockets.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_84352ccf5d324b01a971a63ba93d0aa4">
+				<File Id="file_f29362c5f5874915a57c772a7d7db5dc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Numerics.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3647ce957b434e15a9ef67d04b5ab29b">
+				<File Id="file_08e5576b622847a6a60177d6b65100ac" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Numerics.Vectors.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6560b4ed013b4ef7bf743cd089601813">
+				<File Id="file_f10c6238062e478b9dc6c8d3f5b8c15e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ObjectModel.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e3b322adaa7e4268a38e5cceaa772927">
+				<File Id="file_0052bbebe67b4257bd06611023119e37" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Printing.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_82c6da9d783b474594f84ed6d9447833">
+				<File Id="file_0242689ba0604bbe8410e3be00c2dc9f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Private.CoreLib.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_284d2e48fcad4a3b996952534d354006">
+				<File Id="file_212870353b374a43894354513b7b91a5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Private.DataContractSerialization.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_4b848c18d80c4c1f8c7c2cf4360c199e">
+				<File Id="file_e47a76b7a78c481a9fde3a99fc8c8abb" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Private.Uri.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_edec3414d1fc478cac19c21863d7c5ce">
+				<File Id="file_03aa40eb93a8414b842db767c0440fd9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Private.Xml.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7fa7001b5b0d4b75a1ae2f35cf75fc6a">
+				<File Id="file_ff1d4e9c4d5a46a48f63fa0c164783b6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Private.Xml.Linq.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7c668b5d013c4b12be3f129a6d646e00">
+				<File Id="file_9c5bc9f8146948d992a908d7ae419b4d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.DispatchProxy.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d5985c41073e47b59b93b0ec4a1c35dc">
+				<File Id="file_8491e5c0d6d14816872a1a9f5fa76307" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6dffcb48b37c4818898ddc42a7e42f5b">
+				<File Id="file_72a4e8db08b3412d8535d6d432c30ea9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.Emit.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_be586494957f4ab6a4990a8394a87fe6">
+				<File Id="file_2d6025a7120e4f0fbf31872afe694f5b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.Emit.ILGeneration.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7bd4ed5cbc0f400f962ee4aa1b4c9531">
+				<File Id="file_e32bcc069ce642acbfb9d304cdb5dcfb" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.Emit.Lightweight.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2b4a505825824e6ca6cb4b4e4bf7bc8c">
+				<File Id="file_0908752ee4534827a4a9807fcb61b7c2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9cafc4eff49d49ad9c365d100d91c4d9">
+				<File Id="file_43e6fd84838441d8a13160d9e3b8bcfd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.Metadata.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b536c8bbca574061b0699c7d0e99765d">
+				<File Id="file_e9725a3b3df1499fa681bfe45b94ee8b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_dd89c7a877004693a05eacfd2d1c0bf6">
+				<File Id="file_32755e7ca25549c5932edaf313e0a617" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Reflection.TypeExtensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ca81ba08d2a84ead8e490e20737fcc04">
+				<File Id="file_61952ee1b468459e9837d18326ddc50e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Resources.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8e387c126a084ac5953b66e21981e5bf">
+				<File Id="file_57ac90a972b946cdb2f96dc2331326cf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Resources.Reader.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_58ebc87a980b442ba2f94e3499c3fee1">
+				<File Id="file_27fa1385ba874812ab98870e8816cfca" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Resources.ResourceManager.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b652e479d2c6415a98b02afd10dee3cb">
+				<File Id="file_e3736caa5b5e4d46a99a00146b691766" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Resources.Writer.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2ab87f4832354e1f92bfd3574d62b0d8">
+				<File Id="file_f963c911eb4d4b2bb8cb0e0d038c0c04" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ee8554e82a064a87bf0c6a8218007198">
+				<File Id="file_b3e0c8b5cb4d46938195cb1fbc0d676b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.CompilerServices.VisualC.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f928737db5724efaafa6f5f16248efae">
+				<File Id="file_50e824653fde4117a359d346e41499f8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_bf30d59ce45742a7a3ea041b2e4e2d1d">
+				<File Id="file_4894e8c484074edaaee5c5f8cafd958f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b1d9a93755b84fd4944e5cc2e9f269bb">
+				<File Id="file_c7698c4b47c042f79540b645856fa9c7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Handles.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_fca1eb3dfb3341af906371aa4a6f4955">
+				<File Id="file_161ac3b564ee4d05b5648eecd4f77ccc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.InteropServices.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_4d3e365515a5420e8e9547de265f0262">
+				<File Id="file_10a80a371b3b449399f03773f5ed37f4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.InteropServices.RuntimeInformation.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7be28745fa3d4e6da60b7bb818a71504">
+				<File Id="file_274e6abb642d4cea9ef4154541e96100" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Intrinsics.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_57de8a0a708a451bbb14cf6f4e21472a">
+				<File Id="file_3d16fd857bc14c4bb13b873504615b10" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Loader.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1faf28cee05b4b7d8be63673424ccd06">
+				<File Id="file_5bc6f1065e1e4966a26380e16f1c5869" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Numerics.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f142a48ab52240f894caef02d524e6cd">
+				<File Id="file_c773988d05e749ffb673ee730b457f2a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Serialization.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_12f63637a8514c76807e2d3d6a1c4d3e">
+				<File Id="file_c4d6335cfa024284bc17e9757e6e3258" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Serialization.Formatters.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7d132b23dbfe40dbb62fa70a90861ec4">
+				<File Id="file_cbbc25a25daa451994540a9aafd5bd5f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Serialization.Json.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c6f0b83b1d6940b0abd852ab1e32563a">
+				<File Id="file_462af662aaac405b9826a400766524a5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Serialization.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f997e74f1b3742fea45fa5e3ff1dd4f0">
+				<File Id="file_7f5cf25f2ef14490820a902bde62b138" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Runtime.Serialization.Xml.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_ac91f2ec96934eefb81910ce786dc967">
+				<File Id="file_d3e36a22da9d435db33e37333e391154" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.AccessControl.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_70793d75bf9c48e28b6e719ac6cac630">
+				<File Id="file_b8c9a707c1f4440aa4c880b8d9f5591d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Claims.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_770330401d0847f8863b87dd6f39e3c7">
+				<File Id="file_5e993051aede46909416203df0e60ed9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Algorithms.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f6b4c875714c4420bb1469beb1e3874f">
+				<File Id="file_0652e3aaf54949c38646fbb339a22c6b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Cng.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3f27cf87fc67487f959c51fa56d53de4">
+				<File Id="file_399cd21978244b9681c77d586d9ea83c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Csp.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_859d062b92b0482f90360cf7d9a69727">
+				<File Id="file_ea58e37ed6d94cd2b17d16c4d34c199a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Encoding.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_97373730405040c18e8bb1d249edd2f5">
+				<File Id="file_745600feaa7b4d8b98e87982e701c8eb" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.OpenSsl.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_5b1f452ba8824257a34caa3c291f1caf">
+				<File Id="file_24469bb135ab4e979c24260f4c941406" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Pkcs.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7cce64c127894b7a87f1fa57acb54719">
+				<File Id="file_a8a11d107782400e98690a53ecff20ec" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_57e1cba7187a46f48f03e8f9fb790946">
+				<File Id="file_17c67e052d3a48c09ee98c01ebc223f2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.ProtectedData.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_dc32b7944981459c9c6130e23565d62c">
+				<File Id="file_277546618fa74fb184d29cf5c841e8a9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.X509Certificates.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_384ec6041b034b6b9915eb7a23502c2f">
+				<File Id="file_4af3e9518f184c6081477ecb0ef00508" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Cryptography.Xml.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_afcb0ff08f4b477f87921612996c995b">
+				<File Id="file_900ff68299b5485e9ddcb4d31f4f2486" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_813211a6082243adb34909d4a7c3680f">
+				<File Id="file_501fa9d82bcb4577a0b5b5581a30bfe1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Permissions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7e295b5b7e6b4a9ea0c856baba6aa857">
+				<File Id="file_a88c1c3f0faf4f74bef429d9ff712bf8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Principal.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9e2310b731a84178a4e13af2697c9ba0">
+				<File Id="file_fab2aabf272d4f8b98ffb081bc262eaa" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.Principal.Windows.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_87424d2e0ec44a63a28bc6cb2e9cfab8">
+				<File Id="file_78dd92dea3ca459abe3674e5fbe8f303" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Security.SecureString.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0705a6d567a84c79a069a510862707df">
+				<File Id="file_ab54f2b6a0b14165b5ded965f2c6a284" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ServiceModel.Web.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_52cdb2d54b1d43ec9c826543e4ce11ec">
+				<File Id="file_b6cdcb4a7bbb40548ed34c8484556df1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ServiceProcess.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_59cd61bbec10419d8950529da57156b0">
+				<File Id="file_f524bc5db55945b094e2aff2dc066a92" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Text.Encoding.CodePages.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0bc1fbb1260c468db2f1938cf6f30a89">
+				<File Id="file_2ac7c7b79e314a1f96b082b8ad2560eb" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Text.Encoding.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_104a403030c14022b4f4de99a239c2ea">
+				<File Id="file_2057f77ca2364186bb8cee1ec6b76946" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Text.Encoding.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_46b8db8c25cc409b9a80aacdbed0b444">
+				<File Id="file_f82af8ea77a5423bb7aff06d65edae9d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Text.Encodings.Web.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e4795ec854a641a8a1ef532dff0c8f04">
+				<File Id="file_306d683a244e42e5bee3440245b83f39" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Text.Json.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_eb900616a901459e8bc4c9354965f607">
+				<File Id="file_d3e8ce589c17477d98f27631f4a56124" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Text.RegularExpressions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f3fe1f0dcaf542d9bb10eff79bc97d4c">
+				<File Id="file_5bf28b17380043c88943d2a4f708c876" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.AccessControl.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_a68870437fae4b8a8168c2a0dc35e331">
+				<File Id="file_1375d241edb74fec97e84bcf5959374b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Channels.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_6bcab72292754a19a4470870f73aaea3">
+				<File Id="file_4ac7fb1f49ff49828b4486501234a1f5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_97c905b1e93f4f72a50daf372034a776">
+				<File Id="file_3445aa838d5f4fc4b0c2df22882eeeac" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Overlapped.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_837d1d7e187c43d08cda6c68230b614e">
+				<File Id="file_0a75080d83574efa8c22c41b7c72ae54" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Tasks.Dataflow.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_171802de1af24b2893f6dfb14faaaa12">
+				<File Id="file_850ec5fb2c394926b7c850b65243ed09" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Tasks.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cfe78232e428456c89a4f9dcc3a47353">
+				<File Id="file_f686b91c3f78414ebf886aec43e77bfb" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Tasks.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_81eee8d21e054c82bfda90d29a1d4b7b">
+				<File Id="file_67c038be98ad475181156f2729ddac5e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Tasks.Parallel.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_884b752cb7c9445db8e19027c8abc4e3">
+				<File Id="file_58f61175967341439425c98556573d3d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Thread.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_bc7ecb7b43c543fe9c61d1f6454dc057">
+				<File Id="file_7c445d0a886e4a588cab5bf60b40221f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.ThreadPool.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_680b8c2f84054a448c5c8b6c85bcbc5f">
+				<File Id="file_e233858c8cfb4c2a98c92e527c01531d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Threading.Timer.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_95a1dbd5f42044febc3fb2c165e7766a">
+				<File Id="file_05f98decec7c4b168a863fe7443c5fee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Transactions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3c81799bb123430d8417077590bb92c7">
+				<File Id="file_b17a877690f5433693c806cc675c34de" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Transactions.Local.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0d2bba32ef1d482092b4f143300987eb">
+				<File Id="file_e21e0eb1d2d4403db3e1ab6addc8635c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.ValueTuple.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_71ec2ce7dcd541e8ab5400625aaa84d0">
+				<File Id="file_60fd3889e76746b096990f36fcbe1b82" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Web.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_44bbc134ccbd4f05ac3d2a1bdf87b61b">
+				<File Id="file_70472b5fad6640d683f9648770bc3893" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Web.HttpUtility.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_8a20515de59f4dc4a62ff5fd074a710e">
+				<File Id="file_9cd6e6cacb3943e5b517862b4e4e8c01" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Controls.Ribbon.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_d4f705fff1ad43e1a6afa868e6334401">
+				<File Id="file_511f61c1a17b44b0b4e7e9029a74252c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b4f0a24b6c18402aa2005025918b0d9e">
+				<File Id="file_fe18edab7f0b478588f7cef9d64dd298" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Extensions.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e2f68b1fe6fd445da278a32588426a76">
+				<File Id="file_642e97931651440d9dbbdfd23f1684b7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Forms.Design.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_9d9e1c21991d4ba4ad7da5bd2f9d287d">
+				<File Id="file_73e45bd14af84dc9a3da81b6e10ba031" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Forms.Design.Editors.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_cfa3a53e8d354659aa81e0df59a74e4c">
+				<File Id="file_ff60c3449d344fe0bc989ac14f917371" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Forms.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f2f8ba5e55934786915adc55cce58e6c">
+				<File Id="file_79d43954c1e742d3af0f14353376f72f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Forms.Primitives.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e195625cd8be48ed80fe99cb4372cc40">
+				<File Id="file_66a4d129181d4998ad374e2456a8adaf" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Input.Manipulations.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_033754e95a63494ebdd6fd645fa7ab85">
+				<File Id="file_43167977c4364eb98a80239e6012c22f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Windows.Presentation.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3abe1cdec06249719d4912e7d4c9f535">
+				<File Id="file_e65fb0e532e44d058ee9699da6411eea" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xaml.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_2674e9e9ba4b44408bf459dc89b38e6e">
+				<File Id="file_8193cdbd0140450898c7d58124e0e151" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_37a9030466af4e1eb0c4327919ed58e5">
+				<File Id="file_3f626066e61e455a8e24f1cc4c9540a8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.Linq.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b64dab997f02431d836d3a77ce47dc3f">
+				<File Id="file_3ef04c7cbd724cf8aeb8f31662b8f926" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.ReaderWriter.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_f71ba5103e14475bbe85329aa15d2aa1">
+				<File Id="file_8838d04acd164806b4aeac10dbb6eb8e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.Serialization.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_06a8bf3c63f146c4b2e8bb6bed8cbf02">
+				<File Id="file_8d7441fdccd44c578a5f9e5b307261dd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.XDocument.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_0fb072d27c014692abe390cddee90ccb">
+				<File Id="file_d1b7c59f1ef24617a4173e4561734d81" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.XmlDocument.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1121048603f44397ab5d2de75b85b387">
+				<File Id="file_ebe9278cb1de48ff90d20408ed151e17" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.XmlSerializer.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3cc84b49ef9e4d9894bb0232b9c5b923">
+				<File Id="file_94d14ff2574545ffb278491e13bea1db" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.XPath.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_c7863d1611264a67944937f12223f9b3">
+				<File Id="file_710d9907d55041afbf5594fcacc6c7fa" Source="$(var.spotlightbg.TargetDir)publish\win-x86\System.Xml.XPath.XDocument.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_06c50cb4fd8c45f782ce80ffcaac69a4">
+				<File Id="file_ae8cd4b62a064fd2a3b9421dedc21798" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ucrtbase.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_37b688cb3ba54e04bc6522b8fe711c13">
+				<File Id="file_b002ff13b65f4b25b2428130d904ee8f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\UIAutomationClient.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3d50d6dd7e9d415f911c5960b7f72629">
+				<File Id="file_747ab3c44a9e4f068b989ea87861ba81" Source="$(var.spotlightbg.TargetDir)publish\win-x86\UIAutomationClientSideProviders.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_93b017ad822b4611894d74c8d3936d77">
+				<File Id="file_ed0d268ac9fe4fd4a77189b33aec4e0a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\UIAutomationProvider.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_7a227f037a1e44128ce51a1743e2e96f">
+				<File Id="file_edb8197e5a5c400896c6ea2ff3ecfb71" Source="$(var.spotlightbg.TargetDir)publish\win-x86\UIAutomationTypes.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_3d1347791b7141ae86f720f2f0e934bb">
+				<File Id="file_5d384f59e48a47d1ad9e3050f56deddd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\vcruntime140_cor3.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_e2cd3f8a34fc4a1dbc60aa2085bc0e3d">
+				<File Id="file_277072fb7e0549b48835eabf7e5c40ac" Source="$(var.spotlightbg.TargetDir)publish\win-x86\WindowsBase.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_1650b7b04010431eb608943290c3dcda">
+				<File Id="file_8d8682307d5446db8dc13296c4e3bbd1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\WindowsFormsIntegration.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Component Id="comp_b0de32d8956e44b2a34443768a179359">
+				<File Id="file_a2123899dd3c4fdb9a029c3dc66eff52" Source="$(var.spotlightbg.TargetDir)publish\win-x86\wpfgfx_cor3.dll" KeyPath="yes" ReadOnly="yes"/>
+			</Component>
+			<Directory Id="dir_136906d9814f497c9a0749c18a784b18" Name="cs">
+				<Component Id="comp_9d671b0a370144cbba046061b51691e4">
+					<File Id="file_5d60d653baf7441ea5f379d38f64a61a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2eb2a1dce20e4dd3b277e869ed599d0a">
+					<File Id="file_2d3ca55b3e2c4460be89a7722234c05b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_5d7a614a87044df0b2f0a9501b09e321">
+					<File Id="file_682e709a3a1c4e2d98000971ea568136" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d8ef55f4d5914481b3d3cd88307afcab">
+					<File Id="file_58eb123e4abe4780b4179e9881b7b498" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_043bcd2e08144cd2b80e341a36016bc1">
+					<File Id="file_e0ae41912df34e23b8a482d642a0c44a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_92c2975dcb6b41a1a3ff841b05fba4dd">
+					<File Id="file_415348fb6e044ae88d6ec9f0fd7e7707" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b146a7c16f304623b27383a7e7885141">
+					<File Id="file_d84c6e5552594a5da17965d3556fa441" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9056f0a17569410b8a1b8fcc35508c89">
+					<File Id="file_d794c3abec1d4166a5ae9d758d9d3627" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_6addaab38d62485cb34c3eb7f8932ea3">
+					<File Id="file_d19c9b97fa914f66b67e08ef4e9a190a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_82415d97a7b849eb840dbf2d20a0426d">
+					<File Id="file_0c38d93c00614023af4e5d14900b59ee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_30a3eb93b6144b7ea198d5459ea21ec0">
+					<File Id="file_e62056f72af6460d93b286d88555f464" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_6b0e102caea047ccbf7630ade8a3e848">
+					<File Id="file_c3278025db264f68becd89de8f3b2625" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_225556c814fd4682a5b81a878ee54674">
+					<File Id="file_fe6f662618c14cd79633df6c0c8e3491" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2eb7ce84abdb4ceea4348ac05c5f92f9">
+					<File Id="file_9d9afc462a944118a58974fefe1f2d9a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_188903da755649c4a99fa167e10aedb2">
+					<File Id="file_c78534f202824ae2803dd8c94b3a00c9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2c2a68f507fa43e98eeb6d5144958df9">
+					<File Id="file_81073171f87b4e38a40ef0c160a92777" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8b110be91db5482e9a34aa5d45a11ac1">
+					<File Id="file_ee0bc9ef97b3496687c8af43879571ee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\cs\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_756b17f7ee9e4ce6a77ec837d6a21b4e" Name="de">
+				<Component Id="comp_02b4f7e41e2541a0a7d74b4f2fac3c60">
+					<File Id="file_735316363f234895804e3f8c6b108cb1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_cd6323b72f8e4593bb9de6a055a6f2c6">
+					<File Id="file_7ccd2ee42a6f412cb3ae45406270ab79" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4e90afa320f5455d92165af32b6852f2">
+					<File Id="file_af0831bc991644e3a8e089a8efb74863" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_51c40ee381c24120ad218fa353de4ada">
+					<File Id="file_bf96f2aab0d84502bbdb2f38a4f0c062" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4813b7326ccc4c7a9271bb831cd8f3a7">
+					<File Id="file_facca65a6a334108954b5a0411b5d7ba" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d65ac0afff98431eb8a11ab9865feb92">
+					<File Id="file_97c0a57a877e42ec8b92bbe48fb2eb0a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3fb28f9cc37d44a2b8ff69bcba94ab16">
+					<File Id="file_2df25c86ff1a4f9fbd208afa85aa1512" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d15a0ad953c34c459963c9cd087b5e09">
+					<File Id="file_8c5039e5b64d42e5936a210f7ddb9a48" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_dd6d76dbf6b140f0b878766f35531348">
+					<File Id="file_9c9b4363637f4016bde056c0dc7e7027" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c2371ff6ba3c494898db1d725fbec1be">
+					<File Id="file_d5dc43b73b0447b7a45be1b62b7b3e73" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_a721614d212c4133bfeac21dd6fb4bbf">
+					<File Id="file_0c9f82ffd934447c8f34b674da4e8412" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_15d8d962f0e543eea8ed5d0f70dafba3">
+					<File Id="file_5fef4de98c004256bc2f2a1b0030f586" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_60235bebbf204a4b9863ee74ea5482c7">
+					<File Id="file_f629aa2de5ec4cd8a8b0b1b0b46d9f8e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_312888ce070d473d81fcaaef74c8eb4f">
+					<File Id="file_9dc8e7a09a9f4780bc17fdaea8e6ee33" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c8d2555f943e4184b42fed0e65ef4bd6">
+					<File Id="file_823bb8b0109f449d9c81e37f85c24523" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7d0ddc27a26845268de222f145044d1f">
+					<File Id="file_4145cacb841e453ea39986339a811199" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7466790f4dbe4b1bb8e4f779488790f1">
+					<File Id="file_ada5d550cac340738f31a4a7bfbcb213" Source="$(var.spotlightbg.TargetDir)publish\win-x86\de\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_bfad9d06e60f413abcd48cf03b6fae49" Name="es">
+				<Component Id="comp_902091d7b2cf4b83aaaa97997fcbd114">
+					<File Id="file_958a8ab7953e47f8893fa346ac2812f3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ad21b4c717a94e0c9ede31a8594e3ef6">
+					<File Id="file_1293e91e93c1487892c23b9c189fd710" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f6d603aebac04d6987ab3d7ea73a8d5e">
+					<File Id="file_5a104db6868b4b09b8b466bcf51dcfa1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_dd79d36aa017477fb91e82bf8801863d">
+					<File Id="file_6f153eff0ef449bb9e26a9e885deda40" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_38decd87a2eb458da64c211934e82750">
+					<File Id="file_9ab0ae13accc4154b09007c14c49ad28" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b80ace8efb8b44cf837297a7249a4edf">
+					<File Id="file_80cb3a5fc1cc4ebe93caecfceaac23ce" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e76d07ac4cb84771aa7f1bd6cd1002d2">
+					<File Id="file_9f46349194fa4658b5795ad5e20d3db2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_12212705445d41acbc0d559683022d72">
+					<File Id="file_fbf08157a2584fe1a17601d31ec61ab2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9cbb5ccf1bf14bacb3d3dd42306498cf">
+					<File Id="file_ff7e8907936e4e699efe6818fdb86d35" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9577c6c61e2e4e2283e16cd2e742cb55">
+					<File Id="file_5d111127aec4452cb65a52d7e8226bb4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_288c615fcf9e4eb1997362f53104933f">
+					<File Id="file_fc7792aced904bd49b6bd6fdb949cdc8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_a65a34971d7f48c6a701eac91fb28ac9">
+					<File Id="file_c802abb896c549a5a89c813680532131" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_a58e6e4581ef46f5a3cc5816052eb502">
+					<File Id="file_7e52e960a3f440b7b92b081cde23e5ef" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d0d50fbfe6a44eefa0f0826038db0e2b">
+					<File Id="file_dd82d8f70265448c91290bf450795eb1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_51826dab22c24a53b6ef38a13aa880b5">
+					<File Id="file_d419fe7f4a55427385b90b62deea9f08" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_38f17c988c644729a89b2153cdb8406f">
+					<File Id="file_5916ef24bc024155a6e3676faa3c3d48" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_071f262fbf694283965e68bf25effccb">
+					<File Id="file_0611469578b04514838febcbf11b7a64" Source="$(var.spotlightbg.TargetDir)publish\win-x86\es\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_3e284f79a2d145a982e79aa4e63aafee" Name="fr">
+				<Component Id="comp_7dfc4363664d4f099c0d6f942fd7d7ce">
+					<File Id="file_f0e3de89ebaa4c20b666a73f2ee017b5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8c84df7629df414f989fb3eaae212d0e">
+					<File Id="file_b45a1f1faeed4f10b6ac2f8b4d2c8d28" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4ebe3e7ef891400b8dd1e2bf3bffa77d">
+					<File Id="file_f2c919ae221947ad8c5d1b2133f72b4d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2f9ef515c1b74bc59fb26df8ed336a95">
+					<File Id="file_adca7374be8c4910b722729a9c7568f1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_719d55beb68e4805803df83239807eaa">
+					<File Id="file_c847545363784b63b05dcd9db767e980" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2337232e82c14a4cac3b72420a3631f5">
+					<File Id="file_e7112122b1d4481098bf0423065a4980" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e1ceb2729e9542668e28f4746e0f4bb1">
+					<File Id="file_1db29133dd93403e850493a174720a2f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_5000cf14b2fa4cc68c81b618c9290eb8">
+					<File Id="file_f675c121a9bc415dade44313f4a329e8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_6b603923f35d43b9b146a0dc26697f7f">
+					<File Id="file_5df559f753cb4363a141887ee7738cb0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_00b23004e26445b4875fc6e5ae023cf5">
+					<File Id="file_2bf683c3821740ad9d613227759700da" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ef52d852f84e49b4a67caa5b3a7f547b">
+					<File Id="file_3265e4cb1b484cbf96c60b5fb71b1ac2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c2ff18994e6f4d95b8f9f2e9937677a6">
+					<File Id="file_3c99f229a29f44449dbbc2baf63808be" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7c04a9ad35df4f9295a795de84bbd46c">
+					<File Id="file_bf7a23ee409f4a61a526fa2358f3d0b2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9d30572cf88349c1b6c85fc318cfab24">
+					<File Id="file_ee1aadc037d64209b7254ebceaa1e227" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e9738424ab9b4ed89af4fb8770ee33ea">
+					<File Id="file_cf678613932a4ae59462ae7d01d1f20a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_6eed4c3fa2ef4358b15c61779f72fc8f">
+					<File Id="file_207f2acc49524f059359d857378d3210" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ea35f5520fcc438ba3392da4b4af7b1e">
+					<File Id="file_14a0f973b1b24623bb2e5f7fc2def82a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\fr\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_ed22e74459bf4e89bc2167149268d353" Name="it">
+				<Component Id="comp_214da509ea564c75acfd22986af00fb9">
+					<File Id="file_b14f9b5883ab459086d9678224cb4cc5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9045d1a419594777a633a291a60b7d94">
+					<File Id="file_a17ceebbfb05407fbaed32f20b577f08" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ab844bd443c04445b7115a0dcc5a057e">
+					<File Id="file_7f3c5cf4fb134956995cae37e77cd67a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_0852cbe8a283472cbd05bdde6f7af01a">
+					<File Id="file_8b9228b52c9d43a89d8bf5e1798bb95c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7bfc21ccc1284f1a847360494a4a5e56">
+					<File Id="file_fff6d413ffc94979aaee38605ded4682" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_6a74913a66f44bd389a43d4496e84e19">
+					<File Id="file_ee19341d90ed489eb1dc95b997d76ab0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d056a8a357b342448fa7fef1039af355">
+					<File Id="file_960a033e18c84fbb92c7d94c219344e5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_5d9ab0c48c584e60ae19e9136e762bfe">
+					<File Id="file_9b0d7b7ddb614a039ced2347a50359ae" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_05b3fbb7a4ba45babb43a8b592279de9">
+					<File Id="file_e28c5f6ff07f4c209b9c94908512db12" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_0af465c3006c443b8deeb5d6291a8daa">
+					<File Id="file_86aa859a7000488f939285848819f8ef" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_50820942e1f748938edc76899dfe9e8d">
+					<File Id="file_96cf6ad7479d441c9df06cf289f0b341" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8accc405fd4549cca1ab331d6eb41721">
+					<File Id="file_0a70ee3ba24c45c79291e488833d834f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9a44ea78e0fb40dbb62e240bd101262c">
+					<File Id="file_beb8e957e66c4bee9c6ad1afdb12ebed" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_26690ab7c40644ccaa17162d62a9299f">
+					<File Id="file_689b914c40be4dd19ca034209a4c7c58" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_665b2b72f6be4f4bba33973e1b12bd37">
+					<File Id="file_8a6bb60c82434a2ebf8470711eff4bc7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_dd983754414b4b8ca8c42ed3dd024dbe">
+					<File Id="file_481f4aed510445cc98af0be5c2d3c0a0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_64559ba187c6471a8852cd75834e93fa">
+					<File Id="file_3a8eccac31794ec99de8091748855c54" Source="$(var.spotlightbg.TargetDir)publish\win-x86\it\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_bec28e4487ed4edf938fe9ee709fdd65" Name="ja">
+				<Component Id="comp_15d13af38f63461bb21f051a304832f3">
+					<File Id="file_01d7c0ebdbd74af587e4727cdba1a338" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e23f261f3d81445798db3862b3ed3576">
+					<File Id="file_f527e1ecf32845e19ba85d1db417b39b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ff8dd5c6dabc44f49be19af728f4bed1">
+					<File Id="file_77fb274664114115aab12f3131b7ad17" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_19257df0ba8043cc9cff9ace3f62ec98">
+					<File Id="file_d2577c292f2e46b3a941a2fb1a7d73c0" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c38417fc6623492d80f89dc52283075e">
+					<File Id="file_2041ab983c10485cba7a0c9ef6430b69" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_deb41ed37aaa4d0ea5257157e780dca3">
+					<File Id="file_ba12ea4d3a484e27933e844857b5e9ba" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e910f3fec3ef4a5d8aeec92e534f33bd">
+					<File Id="file_df26f55999d849d38559c61f86310d1e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_832f4340ec794f6d9c826d06d5c767f1">
+					<File Id="file_58bb42879935492eb3565923bec0c6f9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_1bd321dc8daf4361a49c285ddabe7dda">
+					<File Id="file_77bc0315cb1c40158a54cc8d907ad45a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_406946e4fb8144fd80ca262e87275207">
+					<File Id="file_8ce067e6c52043d0ae5d9a55798e0273" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7f2798fd850540c1a579933ad7427a0a">
+					<File Id="file_c00c75d986ca42808e763cbc7131211d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f204057df5614a1d96e0ca5270cbaecc">
+					<File Id="file_dc1751a68eb8441381316f05bb248654" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f9a284ab08a94411bf9323a138f63475">
+					<File Id="file_5a93062fa5ab4bb6bba9d846042ad0e6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8594c41752a145ff887b6ec3dd8737d4">
+					<File Id="file_1611930ae8c1493b9501b14326d8cc09" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_a00cf3e097cb40f1b8cc5ccdf0297af0">
+					<File Id="file_d6e4503a7f234860af7e54b0461dd59b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_10ca04f954124a62b0545869c6aa0ae7">
+					<File Id="file_d43c4bb99ae543acbf5084b3aca86112" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_79ad799549ff471d9210941ceb05f11d">
+					<File Id="file_091354bb915a42778226bc0a5263201f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ja\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_eb013ec41b5d4391932e7a76bf3a9e6a" Name="ko">
+				<Component Id="comp_773318a2363b4c3cb708334addc04bbf">
+					<File Id="file_744a4160657743ada5a39fff0eb817f9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e368a48f74e94a3cad4b2785307a1c25">
+					<File Id="file_aaf491f6806549e8876b75dcae29d53c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_566a4cdf1e384497910bc87071480620">
+					<File Id="file_254cd4f201af4700a04d9314b2b043e1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c28a985ded3f4a57aad16bb71062f0a5">
+					<File Id="file_7f06d3cebb9242919338999716e7fd0c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ea535a8f349944c8b2c2c8436f6cd911">
+					<File Id="file_9abdafa2c6a349318323ff87e717bae9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3763b24073cb45de8348e23e92e4351f">
+					<File Id="file_e35597e7c0814be58444736b91a52e26" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_afda9bf582c646f1b6a7b82106966530">
+					<File Id="file_d2909b03b814484dbab456caf7724fef" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_14b463ef33414b5382adad4c320a9bd9">
+					<File Id="file_c4a839c93d2a4996bdca5e6931f08236" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9159a41444ea41c581a75bf3a2a2774c">
+					<File Id="file_c822c2472e2a4b05b65b25ad83870c10" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b98ba5a3c4c74d6d85c409adf2ac0e8c">
+					<File Id="file_e8a6e344aba944d18ab3d747fccb210e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f1cc53af74254e0883c19d79582b2b30">
+					<File Id="file_767efb7a134b43debffa0bdecc420281" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_81297e4bce7941148707cb1e02492199">
+					<File Id="file_4647500f012b484d9563d698d5ed5e73" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_20704dab44644768bd14047c63361259">
+					<File Id="file_c60eaeba96314b43bb62dd6ad7fe4dbd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d5b2242c47fc4918866aca04aad0516d">
+					<File Id="file_9dc4bdffe03f45cabe08efcb12e3475f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c16fe0a8037248f084f5cb853fef41a9">
+					<File Id="file_01906f5b64a143e6b225141ff97c2b86" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f08d000809584db49eed47a7241ed149">
+					<File Id="file_1d310b07771947de8f50878912dfd10e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_14969badf38e4fb4a9f509d6fe6c5d4d">
+					<File Id="file_b2e1f90fcc4d47d5b2d1a3dd7382315e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ko\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_144d80da14684ee39269536de8d7218b" Name="pl">
+				<Component Id="comp_a4ee5f9f27e54bf499f41d3fb90a5ea0">
+					<File Id="file_77315daeec6e4345bad55042f9d1986c" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4100805423b047c699391ff685d4036b">
+					<File Id="file_d8b2cd371239449cb1ec935f0d91d6ee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_250128a0921a4fe2b597dec5c6ae4413">
+					<File Id="file_52c68a1caf7e4dd690741b612cb086b8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_38a4f91f577d4ffbbc09164952dd7958">
+					<File Id="file_ad394c2910484045bd3e4b1926f8ffb5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f5bc7b739e9c409a9c08c0ff497b9d95">
+					<File Id="file_7a53a8c094da4f0b826ba92a5f454ab9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_23b7b83c0731482c9616df718d1103f8">
+					<File Id="file_799c455340b243b09874232238589af3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_81ca761e72424c5a853b8d77a08910be">
+					<File Id="file_e23663c756dd4095a9a9bb0f4263e688" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c5897735ab3942f18226f4dc3d544e4f">
+					<File Id="file_e646027377bb4221898ce4015d49d576" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_726e5036b18d4b8b897eb843cb363b00">
+					<File Id="file_a7ef4d9323804085a84fba6a4d716375" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c4f584bd80b6403e9d1449f16e747149">
+					<File Id="file_b6277c05277d406f8f508c16c181ede3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8c44368df2a346a3888b7beb58276f8a">
+					<File Id="file_b02974def4104cc0ba37f56ad274fa59" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_86ec65272da04adcbea3b9aa02d4841d">
+					<File Id="file_b898cd15189644cb90f4d85954c5d225" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c11d5877f83649728eb3614de3fe933b">
+					<File Id="file_f0300a4baee843babb0387f540d237c7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_6fdad0ceebf64ad4a34303b46ccec8d4">
+					<File Id="file_2bcb461d97824ad4ab1db08fbb59cf73" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_cfa7a931e1344c3b8cace8aae064be09">
+					<File Id="file_cab88ba904d24359a9754155f7ebef39" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_17d795b6ba28448b9f3e4785493b7c51">
+					<File Id="file_e1022c71826c415393d1a08e27b318fb" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_fe8dcb1d9a964b368725708cf5e3ff33">
+					<File Id="file_534b65b4782c47208a92f56d8d9ee2b5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pl\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_44fb3f3cdf1c4bd1b24cbc555e49e163" Name="pt-BR">
+				<Component Id="comp_6bff0dbd46944e73b796618dcc03b878">
+					<File Id="file_1d1b427354f24f74b55c5da0627f9bc4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9a81489a12f34fe39957b2f2ec09fd13">
+					<File Id="file_99e4e60da5214bcb93cd2aeaaeb1f31e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_fc5cba17ab254a828f18c23472abe6a1">
+					<File Id="file_838fb057906c4a0ab26391da2339f26a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_53e1e1fc70904ade90619a314463765c">
+					<File Id="file_4ae361a1ce32485ca1514f5d96dbae31" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_bb5ed27acc4f4c5f9e2748f315d7c9ff">
+					<File Id="file_45722050c94b4a93ae73f6519cbb6078" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_65416afc17c1483a90d738dae875fcbe">
+					<File Id="file_53fc4730b20f46fd8c26994fcb9ac609" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_608872efb7df450fb7bc34690d23983c">
+					<File Id="file_e909a8ca0f2540f1928e4bb759ef33e6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9c11e98213014be8832fa4142548fb88">
+					<File Id="file_317b34dcd6804e31a384629658dadd9a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b1485da87c4642d2b1bd6594dccc2f11">
+					<File Id="file_ba6f2a72148244a39442385a89f76875" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3f71d96b00a34988b3372741eac051ed">
+					<File Id="file_cfbd2c70b9d6443f9b93b1a47aa151a4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b73a9f09ad6440c2ba3d73c7423edcfa">
+					<File Id="file_8ed10998fdba4e829a3901574a0b5371" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9b18d7eadf944a85ab77bccd3af7702a">
+					<File Id="file_8ee7bf6d2d80418f97dc79bb2f042af7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c18c789adeb54880ba8595954f961984">
+					<File Id="file_2e565b73c3944007a848780eabdfb5d1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f5ecb87e8d494e63a0e740f9d60d349c">
+					<File Id="file_4f4b6c7f687e4bf994934332f53b61c7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_1ccd5a7cd7b1495893787d6e4c99d7e2">
+					<File Id="file_40e5c863de7a4cd39c89e255eee380ee" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_16b2af3e642d47c496449c6681c266bf">
+					<File Id="file_88c547a22d554ebf96c48ebf98a341f1" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c9170bee25de4e689b2013f29f329612">
+					<File Id="file_ecc6ed2344424c1489e421feb3b922e8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\pt-BR\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_50bced05a261494986ce45ae7aedd401" Name="ru">
+				<Component Id="comp_21fc92354bb2444a83e496abd68775b1">
+					<File Id="file_cb19808be48c41b8915d5e8b00fe03b7" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_acdbfb89d44945a6805f207930fade1e">
+					<File Id="file_5176c34f5d754b45886c704d9d780837" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_c50fa57ec59f4b7f8f00bf18fe152b5c">
+					<File Id="file_51414d4f00d746b7ac9beffebc2f6155" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e5401c46d9134e46912615371c5da4cc">
+					<File Id="file_05fd1fd322ff41d7bb70c15eedbd0418" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4f1042aef48a4d41ba13775f6859bf50">
+					<File Id="file_1311ea25365e43e0a55c52f84da7cfc3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9e81a4f1aa814b0b99c4de1835516ddd">
+					<File Id="file_808b768b1c6d42a396312988c0654913" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_474e045b244043169ccad5a7423d327c">
+					<File Id="file_6a17146d5de445c6b3f6f02feb13570a" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_70bef2c928654a9eb66085723163bb4b">
+					<File Id="file_cb781d23cdc945c08dd3171bd65ef61d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3ec3b8151ca14273b2f23628cac34afe">
+					<File Id="file_d9a32b402caf4f8487ae0a395629f15e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_cd19e653d28d4535b91bb2371c73b690">
+					<File Id="file_e8fc4d22b4ac4a5ca624205dd95daacc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9bc153982c97436d9b35888a4b51737d">
+					<File Id="file_5d86ea530a724d51a868dc67984dd058" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_02207f78772346c1aeff48f3b495243e">
+					<File Id="file_c75eed0963294c908193c59dfee2dfdd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2ab68a6284a646d59c14270f1a99ead3">
+					<File Id="file_3ab0d5d3a3234c499e98f197cce40f2b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_76bec4ff57ec42e48e4d1da4134b6368">
+					<File Id="file_3b7d2c5fa01a4114b8cc17b54248b43d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_a86324e8c1854e08a6c6a2612bcd4e07">
+					<File Id="file_10c737d4c08a4373aa8df16d5e6ba0e3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8851116fa19548aebb612587d534cf6e">
+					<File Id="file_e208788cad094f999879e08981ccbf9b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7da2d98470fc4f7eb95f89f1841858a4">
+					<File Id="file_14cf0fda0f3241bca4797d016ab628b8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\ru\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_1f37764210f34ebca8cab70abb332454" Name="tr">
+				<Component Id="comp_e66eddd36de94490ae8753bb4788eae0">
+					<File Id="file_33e44303f18e4490a5852cf85c93b457" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_5f68ebaaa7a7474da0e59d27e54dbe70">
+					<File Id="file_eadb01d3046342cb9a2921a7becee1b9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_a9e52477c28942fd807d8c72bb0b7000">
+					<File Id="file_2f8d627593804ad28113f32797502239" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ecf31be7a1c44e3daf115bb838dec9e3">
+					<File Id="file_8421cae291074c8dbeb147f4bd3f6dd9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ee75d337256148ab863cc811f572d734">
+					<File Id="file_290bd0c34a5b4a4e9858077d3a1213e8" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_aad1f78d37ea484a8782d968080f75d3">
+					<File Id="file_60c1705544094640931e9b1ef7c320b9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_509f0a07a3bf442a9db4b5afcc9346a9">
+					<File Id="file_ab720e4b59cd471388da38aa296e66c6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b43aac4ff9cd4c4d8e9f342c6683864b">
+					<File Id="file_5c6825d4b695400d9a813a729493d06b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_983b4dbf2bfd474286817a0e4ab1f2da">
+					<File Id="file_b08b28d05f8f46908ec6910b9760a2ea" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_24aa496c5a774c05ab4311a780422f3c">
+					<File Id="file_fb9caeeb7cd54de68c791178826b9dfa" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_565e153070854a7392913a3039568021">
+					<File Id="file_a877c02601234838a024e77f9bbf4965" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3c456d494f3d41788e730031458f99d3">
+					<File Id="file_42d54cc4fd90457686ba00a584403ce4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_65bff066c8bd44978635de93ca564d55">
+					<File Id="file_6d717e30ea9c421bafd9c828fe33c317" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_1e451802474241f68e8fac819b9092c7">
+					<File Id="file_9f2410a4ec06499c989b4d4466ae661b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_08d0aa9fac7e485292063fde365a51b2">
+					<File Id="file_501ceb18770c4f90a75e7bc26061cc63" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_2d61935671ec49ce94b636a648e54402">
+					<File Id="file_58e53cc8d9344dbcb6ca5b6f1f48d1c4" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_38b7030165734212a3425b9f77d40bf3">
+					<File Id="file_9424e1e2e7404100b4aa53496777437b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\tr\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_b30944b293574f90b4c66c3f4b5e7133" Name="zh-Hans">
+				<Component Id="comp_daae042cab394bf2adf7e026f71c053a">
+					<File Id="file_dc309e9d223f4be18914b2a1888ac4dc" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_493e62650be345afa0175eede5cc9e2a">
+					<File Id="file_2e9e216e699c4df3bb1d0606dd331180" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_29a5200e401c4a228db1c4cfaf9aab9b">
+					<File Id="file_0068923df12644db88754dffd089d68d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_695d734c1c3f4ebc9386139baf568725">
+					<File Id="file_b8a8093a7f7846f6befc960b086e257e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ada8badbd07d47058270690569a7eb53">
+					<File Id="file_591509c0fb424e8abf6b897e05ab11de" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4b3edc6c6eb5467899e1146b7b50107e">
+					<File Id="file_d6b9d17cc1944288b1dd38ffd8e30629" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3d187086b4504b03941e827d84b37d2c">
+					<File Id="file_c9c62d461b2c4b8ebd72c80ce5396732" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_05470d7e1fa74f99814ade3c350d5088">
+					<File Id="file_56129be202db40afbe5eafc7219f5949" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ce5d233a92964f67ac37e4e9300adcf6">
+					<File Id="file_2057372c3e6740d0aee84a81930637a6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_304de38179e6496886a73076c6f4f5c2">
+					<File Id="file_8a78049b559b48ffae83068f1683a0c3" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4642eb320371429fbfd94558c53b9ff7">
+					<File Id="file_fee3dd78877f4762acba17b1100b260b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7b0efe29bed941bf8544cf149de9c211">
+					<File Id="file_21cb8e933ef743e89e48de703c2c244d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f8b405fe39054977a20553636829792b">
+					<File Id="file_831eef383daf4c908096aa8808a9b817" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3771bf8f49484bbdbf4177a222387eb4">
+					<File Id="file_316633e6baaa4d4c99d5b93c85433502" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_f43e984efb1745b7a707e0a0ca56bb19">
+					<File Id="file_8a97f77edc604ef8b73970068e629322" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3b40d13597dd4b3c8296f1865894178b">
+					<File Id="file_ab1ccbbe3d224fdd9dbdae69ecb9f73e" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_9ef50ad63fa14f58a5a1a6baabc84456">
+					<File Id="file_5cae7ee64a1e422f94c3004521ce5e1d" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hans\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+			<Directory Id="dir_2f75e413be1546f1b2a6411d05b7f67e" Name="zh-Hant">
+				<Component Id="comp_ce83f7aafa644929be6156beb3a5e07d">
+					<File Id="file_9fd32a50deb541edb593dba0752c3151" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_bb59e7733fc94934acb1f8cf8e0233a2">
+					<File Id="file_98307bb2483d44c998c438f5904343e6" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\PresentationCore.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_e2d98424f58f44d296796bef29b316cd">
+					<File Id="file_d8cc609c503440c7ba65c2bc9ac27517" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\PresentationFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_76b8a270a9c1423dbd2f98ef5295c791">
+					<File Id="file_35dc4b3649b0441b9f1fb9bc0e60d3cd" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\PresentationUI.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_b51ff34e7e304fedac929a14326d9807">
+					<File Id="file_72126cc954b041d3861c75c8b1be7344" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\ReachFramework.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_65f676b32f2d4e86ba430ed0e27ec288">
+					<File Id="file_9b8af61df4a847f291b1d6bdb7640483" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\System.Windows.Controls.Ribbon.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8776a1a60bcc41fa9752a86c65bfbce3">
+					<File Id="file_dcdfeda6666343a29b90eb937720d753" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\System.Windows.Forms.Design.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_3513c74e95f64e0bac892e3e55410cb3">
+					<File Id="file_6b38a55ef0484b3db1e712a3192632ec" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\System.Windows.Forms.Primitives.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8febacedfa2e4f05b6d3b8b080355366">
+					<File Id="file_14dddcdb1a444321b090302ca3d7de7b" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\System.Windows.Forms.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_d46fc040ebd346b29c29c9bff796b32b">
+					<File Id="file_856f2a810d20481499fa1bd24023e1a9" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\System.Windows.Input.Manipulations.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_4ce448f6f684492991e0135161db95c0">
+					<File Id="file_61eedf54661242188cbb51ea29431fc2" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\System.Xaml.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_ab24d174722941f48bb4ebef3c308485">
+					<File Id="file_5b08b3bb15d34007b65428b80a20bf9f" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\UIAutomationClient.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_cbfdc152c2064b9bb2985a5cc831fdf2">
+					<File Id="file_2467880e2d4b4ebea869cd6b6ebc91df" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\UIAutomationClientSideProviders.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_1623afa726d448b2b4a3f11349abfe49">
+					<File Id="file_4b3abde6605f47dfb5595a77a3d5f247" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\UIAutomationProvider.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_7d261c047436401999fd67c686a37d5d">
+					<File Id="file_ec06482517ad4271a25a167e45128b90" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\UIAutomationTypes.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_cee7e00681ff4c0e88485b194b44e789">
+					<File Id="file_834daf6763514223abf5c61ac203fdb5" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\WindowsBase.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+				<Component Id="comp_8ec9a0e1c26c4d648eb50bac8a50497b">
+					<File Id="file_85af4f46d93c42d28365e86827243231" Source="$(var.spotlightbg.TargetDir)publish\win-x86\zh-Hant\WindowsFormsIntegration.resources.dll" KeyPath="yes" ReadOnly="yes"/>
+				</Component>
+			</Directory>
+		</DirectoryRef>
+	</Fragment>
+	<Fragment>
+		<ComponentGroup Id="ProductComponents">
+			<ComponentRef Id="comp_218e99fda1da4b248bfd0326d2388db7"/>
+			<ComponentRef Id="comp_5a1b27ca45ad4c529e451532515d7425"/>
+			<ComponentRef Id="comp_b78a14c495054270b38e123ab16e184a"/>
+			<ComponentRef Id="comp_3b9d546d45e1420583110709b672694c"/>
+			<ComponentRef Id="comp_6828c2af30c740f6ac82338bcfce9d8a"/>
+			<ComponentRef Id="comp_656c676d05f846f2a076671264a4a77e"/>
+			<ComponentRef Id="comp_1093c50269a5445182dc6d97df571587"/>
+			<ComponentRef Id="comp_7897f92af81a42419147238574063645"/>
+			<ComponentRef Id="comp_8f492f1e928a49819c5880a00c1dbcda"/>
+			<ComponentRef Id="comp_9b27a36b585b477e88b4ea5b3074557f"/>
+			<ComponentRef Id="comp_d494e327325144e38e7e60a5f5e092fb"/>
+			<ComponentRef Id="comp_c1e49769132647d2a988b3c0bdf64b54"/>
+			<ComponentRef Id="comp_c6ebcf648e3c4acebbb0210979a8d95a"/>
+			<ComponentRef Id="comp_5540b3767d77458cad6c2a69cc8b68d9"/>
+			<ComponentRef Id="comp_e355a5234a0d4b32bd122f621ec23dc6"/>
+			<ComponentRef Id="comp_71b6154af61f4744aeb2e281b723a5e5"/>
+			<ComponentRef Id="comp_10f0f8b6c72a429fb42c62e90ffd4728"/>
+			<ComponentRef Id="comp_fb1633f62c644021b9e5a04dfae96fb5"/>
+			<ComponentRef Id="comp_afa3faed12c54565ab5114e233d62c93"/>
+			<ComponentRef Id="comp_c360ffd7707840c197512215ca2cea8e"/>
+			<ComponentRef Id="comp_554a372a49f54df08dd84f93b9ef1c09"/>
+			<ComponentRef Id="comp_351b8ed6ba88433fbd97d62c73412ec6"/>
+			<ComponentRef Id="comp_e3b2c36043f14e0fa1b375604fbc601e"/>
+			<ComponentRef Id="comp_add1558937d64bd2a326b0ef23b465ee"/>
+			<ComponentRef Id="comp_99ac3a0c925e4fd0bf5bc953572ddf61"/>
+			<ComponentRef Id="comp_0b41bc75250e4b71a77210c7521a1938"/>
+			<ComponentRef Id="comp_6476d89d0c7143438ee853238659af15"/>
+			<ComponentRef Id="comp_c6fcff0a38b74e80a2b63a583bdcda7f"/>
+			<ComponentRef Id="comp_4295a1aea08b4b6bb39acd09c23dbc23"/>
+			<ComponentRef Id="comp_8fcb730cbf0a443cb5c4359761acaded"/>
+			<ComponentRef Id="comp_50ded7ce92714b5385990a7802849018"/>
+			<ComponentRef Id="comp_248f89da4065486e8d4e1c8654e853d6"/>
+			<ComponentRef Id="comp_29b2fb5bb7fb4430983cb866af24eda0"/>
+			<ComponentRef Id="comp_9c6b7083ccd34c30bdf0a3080169c272"/>
+			<ComponentRef Id="comp_58921c30942a4f54b65741d5eb58327d"/>
+			<ComponentRef Id="comp_f1edb3d16f6f4ed9bd7c6763e5d0ca7a"/>
+			<ComponentRef Id="comp_b876452398f94bba80274c7c774f595a"/>
+			<ComponentRef Id="comp_75f39b932fbd4420922a3cd7925bc57a"/>
+			<ComponentRef Id="comp_dace932544ec44f2be984a3efce61949"/>
+			<ComponentRef Id="comp_4f5dc8f75f244d44a54948787e50cca6"/>
+			<ComponentRef Id="comp_cfdf8b44d08c462f8da455928fd2df42"/>
+			<ComponentRef Id="comp_4efd2843c4574dfdb2bb83880c17ca3c"/>
+			<ComponentRef Id="comp_a95873c1cf9e43048947e916861565bc"/>
+			<ComponentRef Id="comp_d82b9b2778d14dd78441a1f60ea30dd7"/>
+			<ComponentRef Id="comp_a22f7eddb9744458a03daf50f3794c4a"/>
+			<ComponentRef Id="comp_0d5877d077a14c02ac8296b63cdf6caf"/>
+			<ComponentRef Id="comp_73bfc08695694dc6a45315e88181fc8d"/>
+			<ComponentRef Id="comp_e0bb08b1863f4a2d86a05498e9cb1225"/>
+			<ComponentRef Id="comp_c8efd3c117f74f96852d6016434fbb96"/>
+			<ComponentRef Id="comp_f950a45fb0d54210bc1a112487c8e6d4"/>
+			<ComponentRef Id="comp_8cf7b26154a34907b956fe54d12bf75c"/>
+			<ComponentRef Id="comp_89e52f53afab4cdaa51a68c5e15aaf3b"/>
+			<ComponentRef Id="comp_ca4629364a3f4d6fbf5713d124fc86ba"/>
+			<ComponentRef Id="comp_f736f5365b6a406d925aad6e4d5e2ca8"/>
+			<ComponentRef Id="comp_36b203d929344ca48ed85f502974c8d0"/>
+			<ComponentRef Id="comp_355fdd6dbc1a48edb91d7a5edf373dc1"/>
+			<ComponentRef Id="comp_7c17c8ade86e4e5695d902348d96cd9d"/>
+			<ComponentRef Id="comp_ca722c69616c4bcc88e21d68f0ad6962"/>
+			<ComponentRef Id="comp_36a318127b02489da954113f6ed0302f"/>
+			<ComponentRef Id="comp_63345fc03111481c964328a1e058ea47"/>
+			<ComponentRef Id="comp_dd8c1c40ddb4410b92c3d9f3bddb795c"/>
+			<ComponentRef Id="comp_6c3afaa5eb9a4f6091f141cd617913ea"/>
+			<ComponentRef Id="comp_377dc9ee3fda4c758598e66161d3a238"/>
+			<ComponentRef Id="comp_20b12c887b184ea0a530e92a136bfa19"/>
+			<ComponentRef Id="comp_c672b49e9849445e8528639d7fa7135f"/>
+			<ComponentRef Id="comp_d7ade14d17134704968960f33de4b585"/>
+			<ComponentRef Id="comp_fe7734a07c754b55801314b3e7835a26"/>
+			<ComponentRef Id="comp_26af68cf88854d42b3ce07cdfd224d88"/>
+			<ComponentRef Id="comp_428277cb346f443f9f9587b49167c56b"/>
+			<ComponentRef Id="comp_8f0a832609dd4d21adb6da396b3d7dde"/>
+			<ComponentRef Id="comp_31e3eea4689640d2b079712f16f8848c"/>
+			<ComponentRef Id="comp_0cb1f2e76a4b432cb23cbce8593cc4eb"/>
+			<ComponentRef Id="comp_94c4467fa70d47aa94e6fdf9eefdd3af"/>
+			<ComponentRef Id="comp_0c51c2cfb7ff4e2aa8922da36c0847a6"/>
+			<ComponentRef Id="comp_c2120ef378964c2b8f44ba11269c4f6c"/>
+			<ComponentRef Id="comp_3ac1b0a2b37543d58c07c924db3bc914"/>
+			<ComponentRef Id="comp_eee6af6a3c6147df9d448f48d751f56c"/>
+			<ComponentRef Id="comp_6524e3bb2aef4a15b29b6c91166aed4b"/>
+			<ComponentRef Id="comp_ec67c46d0eaf4c8283d2a74f51dda0e3"/>
+			<ComponentRef Id="comp_0c9ba0b6f36a477e97d3dd725c56d31b"/>
+			<ComponentRef Id="comp_8cc0ab60e04a485d800aefd38ac02d92"/>
+			<ComponentRef Id="comp_51b6792829e74d1e90537eb9cb0adbe4"/>
+			<ComponentRef Id="comp_a2849997c54a4951ae070c6cb5bea2c4"/>
+			<ComponentRef Id="comp_77af6c87a3984de2bc7160bcc821ab15"/>
+			<ComponentRef Id="comp_137ac3a56f8545e586326d2912fb72a7"/>
+			<ComponentRef Id="comp_b727d106f54f4f98b69ddf7e9938ffe1"/>
+			<ComponentRef Id="comp_d482a3712331450584304f4102c67b61"/>
+			<ComponentRef Id="comp_82d31e17a25e4e0dbd28b810660b595a"/>
+			<ComponentRef Id="comp_a339174da38747e099b731ca2206883a"/>
+			<ComponentRef Id="comp_20a2ca059f72498190a7f276bf2888c7"/>
+			<ComponentRef Id="comp_2f6105cd7e604e509fcd752389ba9a19"/>
+			<ComponentRef Id="comp_d8a23cd5173d4132853b9363ed6b13ea"/>
+			<ComponentRef Id="comp_cc89a611473e49d884f8b183122926df"/>
+			<ComponentRef Id="comp_fe699aaddd734131b5c5cd2097aebf7b"/>
+			<ComponentRef Id="comp_943177f050f14700b697f2adcc4c1c34"/>
+			<ComponentRef Id="comp_e95eaaeddc794f4ab66ca75c39416ee3"/>
+			<ComponentRef Id="comp_fcf211eacd9a4bc2958be787a049d30a"/>
+			<ComponentRef Id="comp_e0c01409b3574dfaae2e8e7ff63659eb"/>
+			<ComponentRef Id="comp_59a4ee41d7e349e2b55799d83d591e37"/>
+			<ComponentRef Id="comp_c4b494352a7147f597df151a322be39a"/>
+			<ComponentRef Id="comp_d083f399b84d4e0f852afbb042ac6efc"/>
+			<ComponentRef Id="comp_3bbe2ca7004644418688fc9e7f7275f6"/>
+			<ComponentRef Id="comp_5c3547c0984044a49d3b0bac683ce0bf"/>
+			<ComponentRef Id="comp_1f5a1682bde14f9a9e05db0e90eaf064"/>
+			<ComponentRef Id="comp_2194570953e844a2b28bc3a112312675"/>
+			<ComponentRef Id="comp_2241000ced1d43e88044349783c9269d"/>
+			<ComponentRef Id="comp_311fd0f4e22a4996af0d13ecd0396fdc"/>
+			<ComponentRef Id="comp_d159fb3e7eda438ea9fb531fb9997153"/>
+			<ComponentRef Id="comp_7625720c11a344bca9e861f674dfd855"/>
+			<ComponentRef Id="comp_7de1e194640c42719d1e1ef693dc1d20"/>
+			<ComponentRef Id="comp_d4009f4f8ff24093b3626a2727fbbb72"/>
+			<ComponentRef Id="comp_b02c2369a14c452db60d41174caf1837"/>
+			<ComponentRef Id="comp_3fdad1a8e49c49fca37fc080a2e80714"/>
+			<ComponentRef Id="comp_1604518d654b4e02aff91d58834e349a"/>
+			<ComponentRef Id="comp_acaaf5a4711e4962bb7e892980e1329f"/>
+			<ComponentRef Id="comp_daffd5cb2a1e48dc8f61e3e7477838da"/>
+			<ComponentRef Id="comp_6b0c8a3a85bd4d7296c4d58cdc912693"/>
+			<ComponentRef Id="comp_a8e05283f42a4b13ae4147a5578684a6"/>
+			<ComponentRef Id="comp_78fe4fae0f424cf6b9fae128be4e6697"/>
+			<ComponentRef Id="comp_5a1f3ac91c8d4530bd0669639745f2df"/>
+			<ComponentRef Id="comp_ce4424c8de904c4da7e07b5914211c86"/>
+			<ComponentRef Id="comp_e95f128012814317b300b24ad3e8468f"/>
+			<ComponentRef Id="comp_752ef077cadd4f7199e3ea492e242a30"/>
+			<ComponentRef Id="comp_5b34f2ae24784474b0ac874c10802ac5"/>
+			<ComponentRef Id="comp_cc9a0d839be8489da43aeb753d62c463"/>
+			<ComponentRef Id="comp_1ab8ab9e4a724bc48d7d813eff06e187"/>
+			<ComponentRef Id="comp_2d60317a4b214f808308fb4225df9a65"/>
+			<ComponentRef Id="comp_f23088428c38413daf06aafa1f5d6e28"/>
+			<ComponentRef Id="comp_ccfb899e5e91493991d5a2f1a9b10ac1"/>
+			<ComponentRef Id="comp_3c50168b00214e499b4657bbf462ba1a"/>
+			<ComponentRef Id="comp_0d79ada91bdf40f09808e16510065163"/>
+			<ComponentRef Id="comp_80beb5513c8745338dd25b9f277fc457"/>
+			<ComponentRef Id="comp_a4e61d74331d496cacfe35bd8bef7bcf"/>
+			<ComponentRef Id="comp_3cde40f43d2b4aec807b3e4d84f58653"/>
+			<ComponentRef Id="comp_cb8e8618031945a5b2190e2e13c75750"/>
+			<ComponentRef Id="comp_40b7aa58d6b64433afb61ca17360e6f6"/>
+			<ComponentRef Id="comp_626a62523e80485aa0f31f45aca25e21"/>
+			<ComponentRef Id="comp_ba1f2086a6bb499b924358bed0c6f90d"/>
+			<ComponentRef Id="comp_f24a47bad042440ca7472f67a439ebd3"/>
+			<ComponentRef Id="comp_33d2d0becaaf4681a2fa899198e1a4ae"/>
+			<ComponentRef Id="comp_f7f70eb343f24f44ba6c884299f95750"/>
+			<ComponentRef Id="comp_d7613684a331496083a663c9f53ce14e"/>
+			<ComponentRef Id="comp_77905a5e389c4c7dbd6f85089555b9d1"/>
+			<ComponentRef Id="comp_0ebab66c85cc443886a9e57282b836b6"/>
+			<ComponentRef Id="comp_b0ceb7d07c574141b8d43868095296f7"/>
+			<ComponentRef Id="comp_17af1987b1514602a0e55d224f756d2c"/>
+			<ComponentRef Id="comp_b5058ad043eb4faa8f9117316ba1e1db"/>
+			<ComponentRef Id="comp_d22e1116e4dc42e4b287554ccf397550"/>
+			<ComponentRef Id="comp_a9d3509257ac42a498aed8eaffb11f51"/>
+			<ComponentRef Id="comp_034351b8f55e4c96bbce3d5aa851480d"/>
+			<ComponentRef Id="comp_077be899ad4543d190b4c6b51b15ab64"/>
+			<ComponentRef Id="comp_cbe05a05593048a39ba3c21b9c836f41"/>
+			<ComponentRef Id="comp_cace0ec50b184ffab0ebdfdca88b00b9"/>
+			<ComponentRef Id="comp_b6e5f3da70404aa5a8f6c1c245e3c6c0"/>
+			<ComponentRef Id="comp_9e41d666551e4c3b8ccfcf3fd6ce33ef"/>
+			<ComponentRef Id="comp_31c58256bbb54291b134beb46447ad29"/>
+			<ComponentRef Id="comp_642d57cd93db43128fc132f9c3b33a1f"/>
+			<ComponentRef Id="comp_9f6e4e72d2cc493383b7a9c695624a6b"/>
+			<ComponentRef Id="comp_176123eaf5514b4cb7778ad14a778397"/>
+			<ComponentRef Id="comp_7c7c9cbe93f84f2da83f3f6d88c1b4da"/>
+			<ComponentRef Id="comp_cb1f31c406a2440c97b172c707c68d9b"/>
+			<ComponentRef Id="comp_85c01069a48b490698ef1b3d423051d6"/>
+			<ComponentRef Id="comp_d0f1f7225c224661ad627b82b5635623"/>
+			<ComponentRef Id="comp_eedee35266c846f989ee1413077a50b0"/>
+			<ComponentRef Id="comp_98d37116b8534c9b993854b70b50e487"/>
+			<ComponentRef Id="comp_10927b8d6a6f404ba74a3d627a390a1b"/>
+			<ComponentRef Id="comp_17528e776ffc4077aa9aa5f4caec17ad"/>
+			<ComponentRef Id="comp_4a2953b5e95246139645403bf99a4e45"/>
+			<ComponentRef Id="comp_6cfd93aef5ee4c3a8bb4bb3eae65ec7c"/>
+			<ComponentRef Id="comp_75efdbd650b748ebb67dd759a117ba32"/>
+			<ComponentRef Id="comp_ca1f19ff163340f885d78699229bc4ef"/>
+			<ComponentRef Id="comp_029786e439bb42f6b41a1cbf1f5662d8"/>
+			<ComponentRef Id="comp_c14b291a06564616aac6517440877880"/>
+			<ComponentRef Id="comp_7ddc930634b74b3282bd01303838eb79"/>
+			<ComponentRef Id="comp_d39ebc9d585f448494cf0dc7f7834a10"/>
+			<ComponentRef Id="comp_a9f9d9ea053f46bca0fdd1ee2e1085cd"/>
+			<ComponentRef Id="comp_84352ccf5d324b01a971a63ba93d0aa4"/>
+			<ComponentRef Id="comp_3647ce957b434e15a9ef67d04b5ab29b"/>
+			<ComponentRef Id="comp_6560b4ed013b4ef7bf743cd089601813"/>
+			<ComponentRef Id="comp_e3b322adaa7e4268a38e5cceaa772927"/>
+			<ComponentRef Id="comp_82c6da9d783b474594f84ed6d9447833"/>
+			<ComponentRef Id="comp_284d2e48fcad4a3b996952534d354006"/>
+			<ComponentRef Id="comp_4b848c18d80c4c1f8c7c2cf4360c199e"/>
+			<ComponentRef Id="comp_edec3414d1fc478cac19c21863d7c5ce"/>
+			<ComponentRef Id="comp_7fa7001b5b0d4b75a1ae2f35cf75fc6a"/>
+			<ComponentRef Id="comp_7c668b5d013c4b12be3f129a6d646e00"/>
+			<ComponentRef Id="comp_d5985c41073e47b59b93b0ec4a1c35dc"/>
+			<ComponentRef Id="comp_6dffcb48b37c4818898ddc42a7e42f5b"/>
+			<ComponentRef Id="comp_be586494957f4ab6a4990a8394a87fe6"/>
+			<ComponentRef Id="comp_7bd4ed5cbc0f400f962ee4aa1b4c9531"/>
+			<ComponentRef Id="comp_2b4a505825824e6ca6cb4b4e4bf7bc8c"/>
+			<ComponentRef Id="comp_9cafc4eff49d49ad9c365d100d91c4d9"/>
+			<ComponentRef Id="comp_b536c8bbca574061b0699c7d0e99765d"/>
+			<ComponentRef Id="comp_dd89c7a877004693a05eacfd2d1c0bf6"/>
+			<ComponentRef Id="comp_ca81ba08d2a84ead8e490e20737fcc04"/>
+			<ComponentRef Id="comp_8e387c126a084ac5953b66e21981e5bf"/>
+			<ComponentRef Id="comp_58ebc87a980b442ba2f94e3499c3fee1"/>
+			<ComponentRef Id="comp_b652e479d2c6415a98b02afd10dee3cb"/>
+			<ComponentRef Id="comp_2ab87f4832354e1f92bfd3574d62b0d8"/>
+			<ComponentRef Id="comp_ee8554e82a064a87bf0c6a8218007198"/>
+			<ComponentRef Id="comp_f928737db5724efaafa6f5f16248efae"/>
+			<ComponentRef Id="comp_bf30d59ce45742a7a3ea041b2e4e2d1d"/>
+			<ComponentRef Id="comp_b1d9a93755b84fd4944e5cc2e9f269bb"/>
+			<ComponentRef Id="comp_fca1eb3dfb3341af906371aa4a6f4955"/>
+			<ComponentRef Id="comp_4d3e365515a5420e8e9547de265f0262"/>
+			<ComponentRef Id="comp_7be28745fa3d4e6da60b7bb818a71504"/>
+			<ComponentRef Id="comp_57de8a0a708a451bbb14cf6f4e21472a"/>
+			<ComponentRef Id="comp_1faf28cee05b4b7d8be63673424ccd06"/>
+			<ComponentRef Id="comp_f142a48ab52240f894caef02d524e6cd"/>
+			<ComponentRef Id="comp_12f63637a8514c76807e2d3d6a1c4d3e"/>
+			<ComponentRef Id="comp_7d132b23dbfe40dbb62fa70a90861ec4"/>
+			<ComponentRef Id="comp_c6f0b83b1d6940b0abd852ab1e32563a"/>
+			<ComponentRef Id="comp_f997e74f1b3742fea45fa5e3ff1dd4f0"/>
+			<ComponentRef Id="comp_ac91f2ec96934eefb81910ce786dc967"/>
+			<ComponentRef Id="comp_70793d75bf9c48e28b6e719ac6cac630"/>
+			<ComponentRef Id="comp_770330401d0847f8863b87dd6f39e3c7"/>
+			<ComponentRef Id="comp_f6b4c875714c4420bb1469beb1e3874f"/>
+			<ComponentRef Id="comp_3f27cf87fc67487f959c51fa56d53de4"/>
+			<ComponentRef Id="comp_859d062b92b0482f90360cf7d9a69727"/>
+			<ComponentRef Id="comp_97373730405040c18e8bb1d249edd2f5"/>
+			<ComponentRef Id="comp_5b1f452ba8824257a34caa3c291f1caf"/>
+			<ComponentRef Id="comp_7cce64c127894b7a87f1fa57acb54719"/>
+			<ComponentRef Id="comp_57e1cba7187a46f48f03e8f9fb790946"/>
+			<ComponentRef Id="comp_dc32b7944981459c9c6130e23565d62c"/>
+			<ComponentRef Id="comp_384ec6041b034b6b9915eb7a23502c2f"/>
+			<ComponentRef Id="comp_afcb0ff08f4b477f87921612996c995b"/>
+			<ComponentRef Id="comp_813211a6082243adb34909d4a7c3680f"/>
+			<ComponentRef Id="comp_7e295b5b7e6b4a9ea0c856baba6aa857"/>
+			<ComponentRef Id="comp_9e2310b731a84178a4e13af2697c9ba0"/>
+			<ComponentRef Id="comp_87424d2e0ec44a63a28bc6cb2e9cfab8"/>
+			<ComponentRef Id="comp_0705a6d567a84c79a069a510862707df"/>
+			<ComponentRef Id="comp_52cdb2d54b1d43ec9c826543e4ce11ec"/>
+			<ComponentRef Id="comp_59cd61bbec10419d8950529da57156b0"/>
+			<ComponentRef Id="comp_0bc1fbb1260c468db2f1938cf6f30a89"/>
+			<ComponentRef Id="comp_104a403030c14022b4f4de99a239c2ea"/>
+			<ComponentRef Id="comp_46b8db8c25cc409b9a80aacdbed0b444"/>
+			<ComponentRef Id="comp_e4795ec854a641a8a1ef532dff0c8f04"/>
+			<ComponentRef Id="comp_eb900616a901459e8bc4c9354965f607"/>
+			<ComponentRef Id="comp_f3fe1f0dcaf542d9bb10eff79bc97d4c"/>
+			<ComponentRef Id="comp_a68870437fae4b8a8168c2a0dc35e331"/>
+			<ComponentRef Id="comp_6bcab72292754a19a4470870f73aaea3"/>
+			<ComponentRef Id="comp_97c905b1e93f4f72a50daf372034a776"/>
+			<ComponentRef Id="comp_837d1d7e187c43d08cda6c68230b614e"/>
+			<ComponentRef Id="comp_171802de1af24b2893f6dfb14faaaa12"/>
+			<ComponentRef Id="comp_cfe78232e428456c89a4f9dcc3a47353"/>
+			<ComponentRef Id="comp_81eee8d21e054c82bfda90d29a1d4b7b"/>
+			<ComponentRef Id="comp_884b752cb7c9445db8e19027c8abc4e3"/>
+			<ComponentRef Id="comp_bc7ecb7b43c543fe9c61d1f6454dc057"/>
+			<ComponentRef Id="comp_680b8c2f84054a448c5c8b6c85bcbc5f"/>
+			<ComponentRef Id="comp_95a1dbd5f42044febc3fb2c165e7766a"/>
+			<ComponentRef Id="comp_3c81799bb123430d8417077590bb92c7"/>
+			<ComponentRef Id="comp_0d2bba32ef1d482092b4f143300987eb"/>
+			<ComponentRef Id="comp_71ec2ce7dcd541e8ab5400625aaa84d0"/>
+			<ComponentRef Id="comp_44bbc134ccbd4f05ac3d2a1bdf87b61b"/>
+			<ComponentRef Id="comp_8a20515de59f4dc4a62ff5fd074a710e"/>
+			<ComponentRef Id="comp_d4f705fff1ad43e1a6afa868e6334401"/>
+			<ComponentRef Id="comp_b4f0a24b6c18402aa2005025918b0d9e"/>
+			<ComponentRef Id="comp_e2f68b1fe6fd445da278a32588426a76"/>
+			<ComponentRef Id="comp_9d9e1c21991d4ba4ad7da5bd2f9d287d"/>
+			<ComponentRef Id="comp_cfa3a53e8d354659aa81e0df59a74e4c"/>
+			<ComponentRef Id="comp_f2f8ba5e55934786915adc55cce58e6c"/>
+			<ComponentRef Id="comp_e195625cd8be48ed80fe99cb4372cc40"/>
+			<ComponentRef Id="comp_033754e95a63494ebdd6fd645fa7ab85"/>
+			<ComponentRef Id="comp_3abe1cdec06249719d4912e7d4c9f535"/>
+			<ComponentRef Id="comp_2674e9e9ba4b44408bf459dc89b38e6e"/>
+			<ComponentRef Id="comp_37a9030466af4e1eb0c4327919ed58e5"/>
+			<ComponentRef Id="comp_b64dab997f02431d836d3a77ce47dc3f"/>
+			<ComponentRef Id="comp_f71ba5103e14475bbe85329aa15d2aa1"/>
+			<ComponentRef Id="comp_06a8bf3c63f146c4b2e8bb6bed8cbf02"/>
+			<ComponentRef Id="comp_0fb072d27c014692abe390cddee90ccb"/>
+			<ComponentRef Id="comp_1121048603f44397ab5d2de75b85b387"/>
+			<ComponentRef Id="comp_3cc84b49ef9e4d9894bb0232b9c5b923"/>
+			<ComponentRef Id="comp_c7863d1611264a67944937f12223f9b3"/>
+			<ComponentRef Id="comp_06c50cb4fd8c45f782ce80ffcaac69a4"/>
+			<ComponentRef Id="comp_37b688cb3ba54e04bc6522b8fe711c13"/>
+			<ComponentRef Id="comp_3d50d6dd7e9d415f911c5960b7f72629"/>
+			<ComponentRef Id="comp_93b017ad822b4611894d74c8d3936d77"/>
+			<ComponentRef Id="comp_7a227f037a1e44128ce51a1743e2e96f"/>
+			<ComponentRef Id="comp_3d1347791b7141ae86f720f2f0e934bb"/>
+			<ComponentRef Id="comp_e2cd3f8a34fc4a1dbc60aa2085bc0e3d"/>
+			<ComponentRef Id="comp_1650b7b04010431eb608943290c3dcda"/>
+			<ComponentRef Id="comp_b0de32d8956e44b2a34443768a179359"/>
+			<ComponentRef Id="comp_9d671b0a370144cbba046061b51691e4"/>
+			<ComponentRef Id="comp_2eb2a1dce20e4dd3b277e869ed599d0a"/>
+			<ComponentRef Id="comp_5d7a614a87044df0b2f0a9501b09e321"/>
+			<ComponentRef Id="comp_d8ef55f4d5914481b3d3cd88307afcab"/>
+			<ComponentRef Id="comp_043bcd2e08144cd2b80e341a36016bc1"/>
+			<ComponentRef Id="comp_92c2975dcb6b41a1a3ff841b05fba4dd"/>
+			<ComponentRef Id="comp_b146a7c16f304623b27383a7e7885141"/>
+			<ComponentRef Id="comp_9056f0a17569410b8a1b8fcc35508c89"/>
+			<ComponentRef Id="comp_6addaab38d62485cb34c3eb7f8932ea3"/>
+			<ComponentRef Id="comp_82415d97a7b849eb840dbf2d20a0426d"/>
+			<ComponentRef Id="comp_30a3eb93b6144b7ea198d5459ea21ec0"/>
+			<ComponentRef Id="comp_6b0e102caea047ccbf7630ade8a3e848"/>
+			<ComponentRef Id="comp_225556c814fd4682a5b81a878ee54674"/>
+			<ComponentRef Id="comp_2eb7ce84abdb4ceea4348ac05c5f92f9"/>
+			<ComponentRef Id="comp_188903da755649c4a99fa167e10aedb2"/>
+			<ComponentRef Id="comp_2c2a68f507fa43e98eeb6d5144958df9"/>
+			<ComponentRef Id="comp_8b110be91db5482e9a34aa5d45a11ac1"/>
+			<ComponentRef Id="comp_02b4f7e41e2541a0a7d74b4f2fac3c60"/>
+			<ComponentRef Id="comp_cd6323b72f8e4593bb9de6a055a6f2c6"/>
+			<ComponentRef Id="comp_4e90afa320f5455d92165af32b6852f2"/>
+			<ComponentRef Id="comp_51c40ee381c24120ad218fa353de4ada"/>
+			<ComponentRef Id="comp_4813b7326ccc4c7a9271bb831cd8f3a7"/>
+			<ComponentRef Id="comp_d65ac0afff98431eb8a11ab9865feb92"/>
+			<ComponentRef Id="comp_3fb28f9cc37d44a2b8ff69bcba94ab16"/>
+			<ComponentRef Id="comp_d15a0ad953c34c459963c9cd087b5e09"/>
+			<ComponentRef Id="comp_dd6d76dbf6b140f0b878766f35531348"/>
+			<ComponentRef Id="comp_c2371ff6ba3c494898db1d725fbec1be"/>
+			<ComponentRef Id="comp_a721614d212c4133bfeac21dd6fb4bbf"/>
+			<ComponentRef Id="comp_15d8d962f0e543eea8ed5d0f70dafba3"/>
+			<ComponentRef Id="comp_60235bebbf204a4b9863ee74ea5482c7"/>
+			<ComponentRef Id="comp_312888ce070d473d81fcaaef74c8eb4f"/>
+			<ComponentRef Id="comp_c8d2555f943e4184b42fed0e65ef4bd6"/>
+			<ComponentRef Id="comp_7d0ddc27a26845268de222f145044d1f"/>
+			<ComponentRef Id="comp_7466790f4dbe4b1bb8e4f779488790f1"/>
+			<ComponentRef Id="comp_902091d7b2cf4b83aaaa97997fcbd114"/>
+			<ComponentRef Id="comp_ad21b4c717a94e0c9ede31a8594e3ef6"/>
+			<ComponentRef Id="comp_f6d603aebac04d6987ab3d7ea73a8d5e"/>
+			<ComponentRef Id="comp_dd79d36aa017477fb91e82bf8801863d"/>
+			<ComponentRef Id="comp_38decd87a2eb458da64c211934e82750"/>
+			<ComponentRef Id="comp_b80ace8efb8b44cf837297a7249a4edf"/>
+			<ComponentRef Id="comp_e76d07ac4cb84771aa7f1bd6cd1002d2"/>
+			<ComponentRef Id="comp_12212705445d41acbc0d559683022d72"/>
+			<ComponentRef Id="comp_9cbb5ccf1bf14bacb3d3dd42306498cf"/>
+			<ComponentRef Id="comp_9577c6c61e2e4e2283e16cd2e742cb55"/>
+			<ComponentRef Id="comp_288c615fcf9e4eb1997362f53104933f"/>
+			<ComponentRef Id="comp_a65a34971d7f48c6a701eac91fb28ac9"/>
+			<ComponentRef Id="comp_a58e6e4581ef46f5a3cc5816052eb502"/>
+			<ComponentRef Id="comp_d0d50fbfe6a44eefa0f0826038db0e2b"/>
+			<ComponentRef Id="comp_51826dab22c24a53b6ef38a13aa880b5"/>
+			<ComponentRef Id="comp_38f17c988c644729a89b2153cdb8406f"/>
+			<ComponentRef Id="comp_071f262fbf694283965e68bf25effccb"/>
+			<ComponentRef Id="comp_7dfc4363664d4f099c0d6f942fd7d7ce"/>
+			<ComponentRef Id="comp_8c84df7629df414f989fb3eaae212d0e"/>
+			<ComponentRef Id="comp_4ebe3e7ef891400b8dd1e2bf3bffa77d"/>
+			<ComponentRef Id="comp_2f9ef515c1b74bc59fb26df8ed336a95"/>
+			<ComponentRef Id="comp_719d55beb68e4805803df83239807eaa"/>
+			<ComponentRef Id="comp_2337232e82c14a4cac3b72420a3631f5"/>
+			<ComponentRef Id="comp_e1ceb2729e9542668e28f4746e0f4bb1"/>
+			<ComponentRef Id="comp_5000cf14b2fa4cc68c81b618c9290eb8"/>
+			<ComponentRef Id="comp_6b603923f35d43b9b146a0dc26697f7f"/>
+			<ComponentRef Id="comp_00b23004e26445b4875fc6e5ae023cf5"/>
+			<ComponentRef Id="comp_ef52d852f84e49b4a67caa5b3a7f547b"/>
+			<ComponentRef Id="comp_c2ff18994e6f4d95b8f9f2e9937677a6"/>
+			<ComponentRef Id="comp_7c04a9ad35df4f9295a795de84bbd46c"/>
+			<ComponentRef Id="comp_9d30572cf88349c1b6c85fc318cfab24"/>
+			<ComponentRef Id="comp_e9738424ab9b4ed89af4fb8770ee33ea"/>
+			<ComponentRef Id="comp_6eed4c3fa2ef4358b15c61779f72fc8f"/>
+			<ComponentRef Id="comp_ea35f5520fcc438ba3392da4b4af7b1e"/>
+			<ComponentRef Id="comp_214da509ea564c75acfd22986af00fb9"/>
+			<ComponentRef Id="comp_9045d1a419594777a633a291a60b7d94"/>
+			<ComponentRef Id="comp_ab844bd443c04445b7115a0dcc5a057e"/>
+			<ComponentRef Id="comp_0852cbe8a283472cbd05bdde6f7af01a"/>
+			<ComponentRef Id="comp_7bfc21ccc1284f1a847360494a4a5e56"/>
+			<ComponentRef Id="comp_6a74913a66f44bd389a43d4496e84e19"/>
+			<ComponentRef Id="comp_d056a8a357b342448fa7fef1039af355"/>
+			<ComponentRef Id="comp_5d9ab0c48c584e60ae19e9136e762bfe"/>
+			<ComponentRef Id="comp_05b3fbb7a4ba45babb43a8b592279de9"/>
+			<ComponentRef Id="comp_0af465c3006c443b8deeb5d6291a8daa"/>
+			<ComponentRef Id="comp_50820942e1f748938edc76899dfe9e8d"/>
+			<ComponentRef Id="comp_8accc405fd4549cca1ab331d6eb41721"/>
+			<ComponentRef Id="comp_9a44ea78e0fb40dbb62e240bd101262c"/>
+			<ComponentRef Id="comp_26690ab7c40644ccaa17162d62a9299f"/>
+			<ComponentRef Id="comp_665b2b72f6be4f4bba33973e1b12bd37"/>
+			<ComponentRef Id="comp_dd983754414b4b8ca8c42ed3dd024dbe"/>
+			<ComponentRef Id="comp_64559ba187c6471a8852cd75834e93fa"/>
+			<ComponentRef Id="comp_15d13af38f63461bb21f051a304832f3"/>
+			<ComponentRef Id="comp_e23f261f3d81445798db3862b3ed3576"/>
+			<ComponentRef Id="comp_ff8dd5c6dabc44f49be19af728f4bed1"/>
+			<ComponentRef Id="comp_19257df0ba8043cc9cff9ace3f62ec98"/>
+			<ComponentRef Id="comp_c38417fc6623492d80f89dc52283075e"/>
+			<ComponentRef Id="comp_deb41ed37aaa4d0ea5257157e780dca3"/>
+			<ComponentRef Id="comp_e910f3fec3ef4a5d8aeec92e534f33bd"/>
+			<ComponentRef Id="comp_832f4340ec794f6d9c826d06d5c767f1"/>
+			<ComponentRef Id="comp_1bd321dc8daf4361a49c285ddabe7dda"/>
+			<ComponentRef Id="comp_406946e4fb8144fd80ca262e87275207"/>
+			<ComponentRef Id="comp_7f2798fd850540c1a579933ad7427a0a"/>
+			<ComponentRef Id="comp_f204057df5614a1d96e0ca5270cbaecc"/>
+			<ComponentRef Id="comp_f9a284ab08a94411bf9323a138f63475"/>
+			<ComponentRef Id="comp_8594c41752a145ff887b6ec3dd8737d4"/>
+			<ComponentRef Id="comp_a00cf3e097cb40f1b8cc5ccdf0297af0"/>
+			<ComponentRef Id="comp_10ca04f954124a62b0545869c6aa0ae7"/>
+			<ComponentRef Id="comp_79ad799549ff471d9210941ceb05f11d"/>
+			<ComponentRef Id="comp_773318a2363b4c3cb708334addc04bbf"/>
+			<ComponentRef Id="comp_e368a48f74e94a3cad4b2785307a1c25"/>
+			<ComponentRef Id="comp_566a4cdf1e384497910bc87071480620"/>
+			<ComponentRef Id="comp_c28a985ded3f4a57aad16bb71062f0a5"/>
+			<ComponentRef Id="comp_ea535a8f349944c8b2c2c8436f6cd911"/>
+			<ComponentRef Id="comp_3763b24073cb45de8348e23e92e4351f"/>
+			<ComponentRef Id="comp_afda9bf582c646f1b6a7b82106966530"/>
+			<ComponentRef Id="comp_14b463ef33414b5382adad4c320a9bd9"/>
+			<ComponentRef Id="comp_9159a41444ea41c581a75bf3a2a2774c"/>
+			<ComponentRef Id="comp_b98ba5a3c4c74d6d85c409adf2ac0e8c"/>
+			<ComponentRef Id="comp_f1cc53af74254e0883c19d79582b2b30"/>
+			<ComponentRef Id="comp_81297e4bce7941148707cb1e02492199"/>
+			<ComponentRef Id="comp_20704dab44644768bd14047c63361259"/>
+			<ComponentRef Id="comp_d5b2242c47fc4918866aca04aad0516d"/>
+			<ComponentRef Id="comp_c16fe0a8037248f084f5cb853fef41a9"/>
+			<ComponentRef Id="comp_f08d000809584db49eed47a7241ed149"/>
+			<ComponentRef Id="comp_14969badf38e4fb4a9f509d6fe6c5d4d"/>
+			<ComponentRef Id="comp_a4ee5f9f27e54bf499f41d3fb90a5ea0"/>
+			<ComponentRef Id="comp_4100805423b047c699391ff685d4036b"/>
+			<ComponentRef Id="comp_250128a0921a4fe2b597dec5c6ae4413"/>
+			<ComponentRef Id="comp_38a4f91f577d4ffbbc09164952dd7958"/>
+			<ComponentRef Id="comp_f5bc7b739e9c409a9c08c0ff497b9d95"/>
+			<ComponentRef Id="comp_23b7b83c0731482c9616df718d1103f8"/>
+			<ComponentRef Id="comp_81ca761e72424c5a853b8d77a08910be"/>
+			<ComponentRef Id="comp_c5897735ab3942f18226f4dc3d544e4f"/>
+			<ComponentRef Id="comp_726e5036b18d4b8b897eb843cb363b00"/>
+			<ComponentRef Id="comp_c4f584bd80b6403e9d1449f16e747149"/>
+			<ComponentRef Id="comp_8c44368df2a346a3888b7beb58276f8a"/>
+			<ComponentRef Id="comp_86ec65272da04adcbea3b9aa02d4841d"/>
+			<ComponentRef Id="comp_c11d5877f83649728eb3614de3fe933b"/>
+			<ComponentRef Id="comp_6fdad0ceebf64ad4a34303b46ccec8d4"/>
+			<ComponentRef Id="comp_cfa7a931e1344c3b8cace8aae064be09"/>
+			<ComponentRef Id="comp_17d795b6ba28448b9f3e4785493b7c51"/>
+			<ComponentRef Id="comp_fe8dcb1d9a964b368725708cf5e3ff33"/>
+			<ComponentRef Id="comp_6bff0dbd46944e73b796618dcc03b878"/>
+			<ComponentRef Id="comp_9a81489a12f34fe39957b2f2ec09fd13"/>
+			<ComponentRef Id="comp_fc5cba17ab254a828f18c23472abe6a1"/>
+			<ComponentRef Id="comp_53e1e1fc70904ade90619a314463765c"/>
+			<ComponentRef Id="comp_bb5ed27acc4f4c5f9e2748f315d7c9ff"/>
+			<ComponentRef Id="comp_65416afc17c1483a90d738dae875fcbe"/>
+			<ComponentRef Id="comp_608872efb7df450fb7bc34690d23983c"/>
+			<ComponentRef Id="comp_9c11e98213014be8832fa4142548fb88"/>
+			<ComponentRef Id="comp_b1485da87c4642d2b1bd6594dccc2f11"/>
+			<ComponentRef Id="comp_3f71d96b00a34988b3372741eac051ed"/>
+			<ComponentRef Id="comp_b73a9f09ad6440c2ba3d73c7423edcfa"/>
+			<ComponentRef Id="comp_9b18d7eadf944a85ab77bccd3af7702a"/>
+			<ComponentRef Id="comp_c18c789adeb54880ba8595954f961984"/>
+			<ComponentRef Id="comp_f5ecb87e8d494e63a0e740f9d60d349c"/>
+			<ComponentRef Id="comp_1ccd5a7cd7b1495893787d6e4c99d7e2"/>
+			<ComponentRef Id="comp_16b2af3e642d47c496449c6681c266bf"/>
+			<ComponentRef Id="comp_c9170bee25de4e689b2013f29f329612"/>
+			<ComponentRef Id="comp_21fc92354bb2444a83e496abd68775b1"/>
+			<ComponentRef Id="comp_acdbfb89d44945a6805f207930fade1e"/>
+			<ComponentRef Id="comp_c50fa57ec59f4b7f8f00bf18fe152b5c"/>
+			<ComponentRef Id="comp_e5401c46d9134e46912615371c5da4cc"/>
+			<ComponentRef Id="comp_4f1042aef48a4d41ba13775f6859bf50"/>
+			<ComponentRef Id="comp_9e81a4f1aa814b0b99c4de1835516ddd"/>
+			<ComponentRef Id="comp_474e045b244043169ccad5a7423d327c"/>
+			<ComponentRef Id="comp_70bef2c928654a9eb66085723163bb4b"/>
+			<ComponentRef Id="comp_3ec3b8151ca14273b2f23628cac34afe"/>
+			<ComponentRef Id="comp_cd19e653d28d4535b91bb2371c73b690"/>
+			<ComponentRef Id="comp_9bc153982c97436d9b35888a4b51737d"/>
+			<ComponentRef Id="comp_02207f78772346c1aeff48f3b495243e"/>
+			<ComponentRef Id="comp_2ab68a6284a646d59c14270f1a99ead3"/>
+			<ComponentRef Id="comp_76bec4ff57ec42e48e4d1da4134b6368"/>
+			<ComponentRef Id="comp_a86324e8c1854e08a6c6a2612bcd4e07"/>
+			<ComponentRef Id="comp_8851116fa19548aebb612587d534cf6e"/>
+			<ComponentRef Id="comp_7da2d98470fc4f7eb95f89f1841858a4"/>
+			<ComponentRef Id="comp_e66eddd36de94490ae8753bb4788eae0"/>
+			<ComponentRef Id="comp_5f68ebaaa7a7474da0e59d27e54dbe70"/>
+			<ComponentRef Id="comp_a9e52477c28942fd807d8c72bb0b7000"/>
+			<ComponentRef Id="comp_ecf31be7a1c44e3daf115bb838dec9e3"/>
+			<ComponentRef Id="comp_ee75d337256148ab863cc811f572d734"/>
+			<ComponentRef Id="comp_aad1f78d37ea484a8782d968080f75d3"/>
+			<ComponentRef Id="comp_509f0a07a3bf442a9db4b5afcc9346a9"/>
+			<ComponentRef Id="comp_b43aac4ff9cd4c4d8e9f342c6683864b"/>
+			<ComponentRef Id="comp_983b4dbf2bfd474286817a0e4ab1f2da"/>
+			<ComponentRef Id="comp_24aa496c5a774c05ab4311a780422f3c"/>
+			<ComponentRef Id="comp_565e153070854a7392913a3039568021"/>
+			<ComponentRef Id="comp_3c456d494f3d41788e730031458f99d3"/>
+			<ComponentRef Id="comp_65bff066c8bd44978635de93ca564d55"/>
+			<ComponentRef Id="comp_1e451802474241f68e8fac819b9092c7"/>
+			<ComponentRef Id="comp_08d0aa9fac7e485292063fde365a51b2"/>
+			<ComponentRef Id="comp_2d61935671ec49ce94b636a648e54402"/>
+			<ComponentRef Id="comp_38b7030165734212a3425b9f77d40bf3"/>
+			<ComponentRef Id="comp_daae042cab394bf2adf7e026f71c053a"/>
+			<ComponentRef Id="comp_493e62650be345afa0175eede5cc9e2a"/>
+			<ComponentRef Id="comp_29a5200e401c4a228db1c4cfaf9aab9b"/>
+			<ComponentRef Id="comp_695d734c1c3f4ebc9386139baf568725"/>
+			<ComponentRef Id="comp_ada8badbd07d47058270690569a7eb53"/>
+			<ComponentRef Id="comp_4b3edc6c6eb5467899e1146b7b50107e"/>
+			<ComponentRef Id="comp_3d187086b4504b03941e827d84b37d2c"/>
+			<ComponentRef Id="comp_05470d7e1fa74f99814ade3c350d5088"/>
+			<ComponentRef Id="comp_ce5d233a92964f67ac37e4e9300adcf6"/>
+			<ComponentRef Id="comp_304de38179e6496886a73076c6f4f5c2"/>
+			<ComponentRef Id="comp_4642eb320371429fbfd94558c53b9ff7"/>
+			<ComponentRef Id="comp_7b0efe29bed941bf8544cf149de9c211"/>
+			<ComponentRef Id="comp_f8b405fe39054977a20553636829792b"/>
+			<ComponentRef Id="comp_3771bf8f49484bbdbf4177a222387eb4"/>
+			<ComponentRef Id="comp_f43e984efb1745b7a707e0a0ca56bb19"/>
+			<ComponentRef Id="comp_3b40d13597dd4b3c8296f1865894178b"/>
+			<ComponentRef Id="comp_9ef50ad63fa14f58a5a1a6baabc84456"/>
+			<ComponentRef Id="comp_ce83f7aafa644929be6156beb3a5e07d"/>
+			<ComponentRef Id="comp_bb59e7733fc94934acb1f8cf8e0233a2"/>
+			<ComponentRef Id="comp_e2d98424f58f44d296796bef29b316cd"/>
+			<ComponentRef Id="comp_76b8a270a9c1423dbd2f98ef5295c791"/>
+			<ComponentRef Id="comp_b51ff34e7e304fedac929a14326d9807"/>
+			<ComponentRef Id="comp_65f676b32f2d4e86ba430ed0e27ec288"/>
+			<ComponentRef Id="comp_8776a1a60bcc41fa9752a86c65bfbce3"/>
+			<ComponentRef Id="comp_3513c74e95f64e0bac892e3e55410cb3"/>
+			<ComponentRef Id="comp_8febacedfa2e4f05b6d3b8b080355366"/>
+			<ComponentRef Id="comp_d46fc040ebd346b29c29c9bff796b32b"/>
+			<ComponentRef Id="comp_4ce448f6f684492991e0135161db95c0"/>
+			<ComponentRef Id="comp_ab24d174722941f48bb4ebef3c308485"/>
+			<ComponentRef Id="comp_cbfdc152c2064b9bb2985a5cc831fdf2"/>
+			<ComponentRef Id="comp_1623afa726d448b2b4a3f11349abfe49"/>
+			<ComponentRef Id="comp_7d261c047436401999fd67c686a37d5d"/>
+			<ComponentRef Id="comp_cee7e00681ff4c0e88485b194b44e789"/>
+			<ComponentRef Id="comp_8ec9a0e1c26c4d648eb50bac8a50497b"/>
 		</ComponentGroup>
 	</Fragment>
 </Wix>
