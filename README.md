@@ -1,7 +1,5 @@
 # Desktop background image from Windows spotlight
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tksh164/desktop-background-from-spotlight)
-
 ## 🗨 About
 
 Setting the desktop background image from Windows spotlight lock screen image.
